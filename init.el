@@ -5,6 +5,7 @@
 
 ;; Load packages paths
 (add-to-list 'load-path "~/.emacs.d/auto-complete")
+(add-to-list 'load-path "~/.emacs.d/cl-lib")
 (add-to-list 'load-path "~/.emacs.d/flymake")
 (add-to-list 'load-path "~/.emacs.d/hlinum")
 (add-to-list 'load-path "~/.emacs.d/jedi")
@@ -97,8 +98,9 @@
 ;; Auto revert files (useful when changing branch)
 (global-auto-revert-mode 1)
 
-;; Auto close braces and so
-(electric-pair-mode 1)
+;; Auto close braces and so (emacs 24+ only)
+(when (>= emacs-major-version 24)
+  (electric-pair-mode 1))
 
 ;; 80 char rule (for text and prog only)
 (setq-default fill-column 80)
