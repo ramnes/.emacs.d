@@ -1,7 +1,7 @@
-ramnes .emacs.d
-===============
+.emacs.d
+========
 
-My emacs24-nox configuration, mainly for Python programming.
+My emacs24-nox (or at least 23+) configuration, mainly for Python programming.
 
 Dependances
 -----------
@@ -13,6 +13,5 @@ Install
 -------
 ```
 git clone git@github.com:ramnes/.emacs.d.git
-cd .emacs.d
-sudo pip install -r requierements.txt
+sudo pip install -r .emacs.d/requirements.txt
 ```
