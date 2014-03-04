@@ -3,24 +3,31 @@
 ;; <contact@ramnes.eu>
 ;;
 
-;; Load modules paths
+;; Load packages paths
 (add-to-list 'load-path "~/.emacs.d/auto-complete")
-(add-to-list 'load-path "~/.emacs.d/hlinum")
 (add-to-list 'load-path "~/.emacs.d/flymake")
+(add-to-list 'load-path "~/.emacs.d/hlinum")
+(add-to-list 'load-path "~/.emacs.d/jedi")
 (add-to-list 'load-path "~/.emacs.d/modes")
 
-;; Load modules
+;; Jedi dependances
+(add-to-list 'load-path "~/.emacs.d/ctable")
+(add-to-list 'load-path "~/.emacs.d/deferred")
+(add-to-list 'load-path "~/.emacs.d/epc")
+
+;; Load packages
 (load "auto-complete")
 (load "auto-complete-config")
 (load "hlinum")
+(load "jedi")
 
 ;; Load modes from .emacs.d/modes
-(load "php-mode")
-(load "lua-mode")
-(load "jinja2-mode")
-(load "rust-mode")
 (load "android-mode")
 (load "column-enforce-mode")
+(load "jinja2-mode")
+(load "lua-mode")
+(load "php-mode")
+(load "rust-mode")
 
 ;; Key bindings (editing)
 (global-set-key "\C-c\C-c" 'comment-or-uncomment-region)
@@ -63,6 +70,10 @@
 (setq ac-use-fuzzy 1)
 (setq ac-use-quick-help 1)
 (setq ac-set-trigger-key "TAB")
+
+;; Jedi (Python completion)
+(setq jedi:complete-on-dot nil)
+(add-hook 'python-mode-hook 'jedi:setup)
 
 ;; Show Line/Char
 (line-number-mode 1)
