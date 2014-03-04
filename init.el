@@ -5,7 +5,6 @@
 
 ;; Load packages paths
 (add-to-list 'load-path "~/.emacs.d/auto-complete")
-(add-to-list 'load-path "~/.emacs.d/cl-lib")
 (add-to-list 'load-path "~/.emacs.d/flymake")
 (add-to-list 'load-path "~/.emacs.d/hlinum")
 (add-to-list 'load-path "~/.emacs.d/jedi")
@@ -15,6 +14,10 @@
 (add-to-list 'load-path "~/.emacs.d/ctable")
 (add-to-list 'load-path "~/.emacs.d/deferred")
 (add-to-list 'load-path "~/.emacs.d/epc")
+
+;; Emacs 23 compatibility
+(when (< emacs-major-version 24)
+  (add-to-list 'load-path "~/.emacs.d/cl-lib"))
 
 ;; Load packages
 (load "auto-complete")
