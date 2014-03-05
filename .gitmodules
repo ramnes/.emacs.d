@@ -16,3 +16,6 @@
 [submodule "auto-complete"]
 	path = auto-complete
 	url = git@github.com:auto-complete/auto-complete.git
+[submodule "flymake"]
+	path = flymake
+	url = git@github.com:illusori/emacs-flymake.git
