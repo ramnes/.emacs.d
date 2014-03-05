@@ -12,6 +12,6 @@ sudo apt-get install python-virtualenv python-pip
 Install
 -------
 ```
-git clone git@github.com:ramnes/.emacs.d.git
-sudo pip install -r .emacs.d/requirements.txt
+git clone git@github.com:ramnes/.emacs.d.git --recursive
+sudo pip install -r .emacs.d/jedi/requirements.txt
 ```
