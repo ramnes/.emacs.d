@@ -1,0 +1,15 @@
+[submodule "jedi"]
+	path = jedi
+	url = git@github.com:tkf/emacs-jedi.git
+[submodule "ctable"]
+	path = ctable
+	url = git@github.com:kiwanami/emacs-ctable.git
+[submodule "deferred"]
+	path = deferred
+	url = git@github.com:kiwanami/emacs-deferred.git
+[submodule "epc"]
+	path = epc
+	url = git@github.com:kiwanami/emacs-epc.git
+[submodule "cl-lib"]
+	path = cl-lib
+	url = git@github.com:emacsmirror/cl-lib.git
