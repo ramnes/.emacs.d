@@ -90,6 +90,7 @@
 
 ;; Highlight current line
 (global-hl-line-mode 1)
+(hlinum-activate)
 
 ;; Line number (from http://bit.ly/1bUYyIp)
 (setq linum-format 'dynamic)

@@ -19,3 +19,6 @@
 [submodule "flymake"]
 	path = flymake
 	url = git@github.com:illusori/emacs-flymake.git
+[submodule "hlinum"]
+	path = hlinum
+	url = git@github.com:ffailla/hlinum-mode.git

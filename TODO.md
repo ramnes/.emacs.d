@@ -3,5 +3,5 @@ TODO
 
 * make bindings override modes
 * split init.el
-* all deps in git submodules
+* modes in submodules?
 * auto-completions à la IPython (EIN?)
