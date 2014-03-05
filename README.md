@@ -3,7 +3,7 @@
 
 My emacs24-nox (or at least 23+) configuration, mainly for Python programming.
 
-Dependances
+Dependencies
 -----------
 ```
 sudo apt-get install python-virtualenv python-pip
