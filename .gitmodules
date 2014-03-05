@@ -13,3 +13,6 @@
 [submodule "cl-lib"]
 	path = cl-lib
 	url = git@github.com:emacsmirror/cl-lib.git
+[submodule "auto-complete"]
+	path = auto-complete
+	url = git@github.com:auto-complete/auto-complete.git

@@ -10,7 +10,12 @@
 (add-to-list 'load-path "~/.emacs.d/jedi")
 (add-to-list 'load-path "~/.emacs.d/modes")
 
-;; Jedi dependances
+;; Auto-complete dependencies
+(add-to-list 'load-path "~/.emacs.d/auto-complete/lib/ert")
+(add-to-list 'load-path "~/.emacs.d/auto-complete/lib/fuzzy")
+(add-to-list 'load-path "~/.emacs.d/auto-complete/lib/popup")
+
+;; Jedi dependencies
 (add-to-list 'load-path "~/.emacs.d/ctable")
 (add-to-list 'load-path "~/.emacs.d/deferred")
 (add-to-list 'load-path "~/.emacs.d/epc")
@@ -76,7 +81,7 @@
 (setq ac-set-trigger-key "TAB")
 
 ;; Jedi (Python completion)
-(setq jedi:complete-on-dot nil)
+(setq jedi:complete-on-dot t)
 (add-hook 'python-mode-hook 'jedi:setup)
 
 ;; Show Line/Char
