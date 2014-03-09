@@ -34,3 +34,6 @@
 [submodule "site-lisp/lua-mode"]
 	path = site-lisp/lua-mode
 	url = git@github.com:immerrr/lua-mode.git
+[submodule "site-lisp/php-mode"]
+	path = site-lisp/php-mode
+	url = git@github.com:ejmr/php-mode.git
