@@ -22,3 +22,6 @@
 [submodule "hlinum"]
 	path = site-lisp/hlinum
 	url = git@github.com:ffailla/hlinum-mode.git
+[submodule "site-lisp/android-mode"]
+	path = site-lisp/android-mode
+	url = git@github.com:remvee/android-mode.git
