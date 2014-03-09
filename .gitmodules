@@ -28,3 +28,6 @@
 [submodule "site-lisp/column-enforce-mode"]
 	path = site-lisp/column-enforce-mode
 	url = git@github.com:jordonbiondo/column-enforce-mode.git
+[submodule "site-lisp/jinja2-mode"]
+	path = site-lisp/jinja2-mode
+	url = git@github.com:paradoxxxzero/jinja2-mode.git
