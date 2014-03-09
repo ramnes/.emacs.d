@@ -4,53 +4,31 @@
 ;;
 
 ;; Load packages paths
-(add-to-list 'load-path "~/.emacs.d/auto-complete")
-(add-to-list 'load-path "~/.emacs.d/flymake")
-(add-to-list 'load-path "~/.emacs.d/hlinum")
-(add-to-list 'load-path "~/.emacs.d/jedi")
-(add-to-list 'load-path "~/.emacs.d/modes")
-
-;; Auto-complete dependencies
-(add-to-list 'load-path "~/.emacs.d/auto-complete/lib/ert")
-(add-to-list 'load-path "~/.emacs.d/auto-complete/lib/fuzzy")
-(add-to-list 'load-path "~/.emacs.d/auto-complete/lib/popup")
-
-;; Jedi dependencies
-(add-to-list 'load-path "~/.emacs.d/ctable")
-(add-to-list 'load-path "~/.emacs.d/deferred")
-(add-to-list 'load-path "~/.emacs.d/epc")
-
-;; Emacs 23 compatibility
-(when (< emacs-major-version 24)
-  (add-to-list 'load-path "~/.emacs.d/cl-lib"))
+(let ((default-directory "~/.emacs.d/lisp/"))
+  (normal-top-level-add-to-load-path '("."))
+  (normal-top-level-add-subdirs-to-load-path))
 
 ;; Load packages
+(load "android-mode")
 (load "auto-complete")
 (load "auto-complete-config")
+(load "column-enforce-mode")
 (load "hlinum")
 (load "jedi")
-
-;; Load modes from .emacs.d/modes
-(load "android-mode")
-(load "column-enforce-mode")
 (load "jinja2-mode")
 (load "lua-mode")
 (load "php-mode")
 (load "rust-mode")
 
-;; Key bindings (editing)
+;; Key bindings
 (global-set-key "\C-c\C-c" 'comment-or-uncomment-region)
-(global-set-key "\C-c\C-s" 'replace-string)
 (global-set-key "\C-c\C-r" 'replace-regexp)
-
-;; Key bindings (buffers)
-(global-set-key "\C-xb" 'buffer-menu)
-(global-set-key "\C-x\C-b" 'buffer-menu)
-(global-set-key "\C-xk" 'kill-buffer)
-(global-set-key "\C-x\C-k" 'kill-buffer-and-window)
-
-;; Key bindings (navigation)
+(global-set-key "\C-c\C-s" 'replace-string)
 (global-set-key "\C-l" 'goto-line)
+(global-set-key "\C-x\C-b" 'buffer-menu)
+(global-set-key "\C-x\C-k" 'kill-buffer-and-window)
+(global-set-key "\C-xb" 'buffer-menu)
+(global-set-key "\C-xk" 'kill-buffer)
 
 ;; Android
 (setq android-mode-avd "AVD")
@@ -76,9 +54,9 @@
 (ac-config-default)
 
 (setq ac-auto-start 1)
+(setq ac-set-trigger-key "TAB")
 (setq ac-use-fuzzy 1)
 (setq ac-use-quick-help 1)
-(setq ac-set-trigger-key "TAB")
 
 ;; Jedi (Python completion)
 (setq jedi:complete-on-dot t)
@@ -134,42 +112,42 @@
 (set-face-background 'vertical-border nil)
 
 (set-face-background 'isearch "Orange3")
-(set-face-background 'lazy-highlight "Tan4")
 (set-face-background 'isearch-fail "IndianRed3")
+(set-face-background 'lazy-highlight "Tan4")
 
+(set-face-bold-p 'font-lock-function-name-face 1)
+(set-face-bold-p 'font-lock-keyword-face 1)
+(set-face-bold-p 'font-lock-type-face 1)
+(set-face-bold-p 'minibuffer-prompt 1)
+
+(set-face-foreground 'font-lock-variable-name-face nil)
 (set-face-foreground 'isearch nil)
 (set-face-foreground 'isearch-fail nil)
-(set-face-foreground 'font-lock-variable-name-face nil)
+(set-face-foreground 'minibuffer-prompt fg)
 (set-face-foreground 'mode-line fg)
 (set-face-foreground 'mode-line-inactive fg)
-(set-face-foreground 'minibuffer-prompt fg)
 (set-face-foreground 'popup-face fg)
 (set-face-foreground 'popup-menu-face fg)
 (set-face-foreground 'region fg)
 (set-face-foreground 'vertical-border bg)
 
-(set-face-foreground 'font-lock-string-face "SeaGreen3")
-(set-face-foreground 'font-lock-comment-face "IndianRed3")
-(set-face-foreground 'font-lock-function-name-face "SteelBlue3")
-(set-face-foreground 'font-lock-type-face "SeaGreen3")
-(set-face-foreground 'font-lock-keyword-face "SkyBlue1")
 (set-face-foreground 'font-lock-builtin-face "SkyBlue1")
+(set-face-foreground 'font-lock-comment-face "IndianRed3")
 (set-face-foreground 'font-lock-constant-face "Magenta")
+(set-face-foreground 'font-lock-function-name-face "SteelBlue3")
+(set-face-foreground 'font-lock-keyword-face "SkyBlue1")
 (set-face-foreground 'font-lock-preprocessor-face "Magenta")
-
-(set-face-bold-p 'minibuffer-prompt 1)
-(set-face-bold-p 'font-lock-function-name-face 1)
-(set-face-bold-p 'font-lock-type-face 1)
-(set-face-bold-p 'font-lock-keyword-face 1)
+(set-face-foreground 'font-lock-string-face "SeaGreen3")
+(set-face-foreground 'font-lock-type-face "SeaGreen3")
 
 ;; Colors (flymake)
-(set-face-foreground 'flymake-errline nil)
 (set-face-background 'flymake-errline err)
+(set-face-foreground 'flymake-errline nil)
 
 ;; Colors (auto-complete)
-(set-face-foreground 'ac-candidate-face "White")
 (set-face-background 'ac-candidate-face "Black")
 (set-face-background 'ac-selection-face fg)
+(set-face-foreground 'ac-candidate-face "White")
 (set-face-foreground 'ac-completion-face fg)
 
 ;; Colors (highlight)
@@ -177,11 +155,11 @@
 (set-face-foreground 'highlight nil)
 
 ;; Colors (linum)
-(set-face-background 'linum-highlight-face bg)
 (set-face-background 'linum nil)
-(set-face-foreground 'linum-highlight-face fg)
-(set-face-foreground 'linum bg)
+(set-face-background 'linum-highlight-face bg)
 (set-face-bold-p 'linum-highlight-face 1)
+(set-face-foreground 'linum bg)
+(set-face-foreground 'linum-highlight-face fg)
 
 ;; Colors (80+ chars)
 (set-face-attribute 'column-enforce-face nil :inherit nil :underline nil)
