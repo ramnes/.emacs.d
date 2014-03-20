@@ -37,3 +37,6 @@
 [submodule "site-lisp/php-mode"]
 	path = site-lisp/php-mode
 	url = git@github.com:ejmr/php-mode.git
+[submodule "site-lisp/python-environment"]
+	path = site-lisp/python-environment
+	url = git@github.com:tkf/emacs-python-environment.git
