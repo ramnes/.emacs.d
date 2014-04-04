@@ -13,5 +13,4 @@ Install
 -------
 ```
 git clone git@github.com:ramnes/.emacs.d.git --recursive
-sudo pip install -r .emacs.d/jedi/requirements.txt
 ```
