@@ -1,14 +1,13 @@
 ;;
-;; init.el in ramnes dotfiles
+;; init.el in ramnes/.emacs.d
 ;; <contact@ramnes.eu>
 ;;
 
-;; Load packages paths
+;; Load packages
 (let ((default-directory "~/.emacs.d/site-lisp/"))
   (normal-top-level-add-to-load-path '("."))
   (normal-top-level-add-subdirs-to-load-path))
 
-;; Load packages
 (load "android-mode")
 (load "auto-complete")
 (load "auto-complete-config")
@@ -21,15 +20,9 @@
 (load "rust-mode")
 (load "flymake-cursor")
 
-;; Key bindings
-(global-set-key "\C-c\C-c" 'comment-or-uncomment-region)
-(global-set-key "\C-c\C-r" 'replace-regexp)
-(global-set-key "\C-c\C-s" 'replace-string)
-(global-set-key "\C-l" 'goto-line)
-(global-set-key "\C-x\C-b" 'buffer-menu)
-(global-set-key "\C-x\C-k" 'kill-buffer-and-window)
-(global-set-key "\C-xb" 'buffer-menu)
-(global-set-key "\C-xk" 'kill-buffer)
+;; Load lisp
+(add-to-list 'load-path "~/.emacs.d/lisp")
+(load "keys-mode")
 
 ;; Android
 (setq android-mode-avd "AVD")
@@ -107,6 +100,9 @@
 		   "\\(@\\|/\\(/\\|[*][*]?\\)\\)")
 	     (modify-syntax-entry
 	      ?@ "< b" java-mode-syntax-table)))
+
+;; Key bindings
+(keys-mode 1)
 
 ;; Global colors
 (defvar bg "Grey21")
