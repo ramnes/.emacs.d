@@ -85,6 +85,9 @@
 ;; Auto revert files (useful when changing branch)
 (global-auto-revert-mode 1)
 
+;; Overwrite regions
+(delete-selection-mode 1)
+
 ;; Auto close braces and so (emacs 24+ only)
 (when (>= emacs-major-version 24)
   (electric-pair-mode 1))
@@ -95,6 +98,14 @@
 (add-hook 'prog-mode-hook 'auto-fill-mode)
 (add-hook 'text-mode-hook 'column-enforce-mode)
 (add-hook 'prog-mode-hook 'column-enforce-mode)
+
+;; Treat Java 1.5 @-style annotations as comments.
+(add-hook 'java-mode-hook
+	  '(lambda ()
+	     (setq c-comment-start-regexp
+		   "\\(@\\|/\\(/\\|[*][*]?\\)\\)")
+	     (modify-syntax-entry
+	      ?@ "< b" java-mode-syntax-table)))
 
 ;; Global colors
 (defvar bg "Grey21")
