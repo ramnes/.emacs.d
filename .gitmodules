@@ -40,3 +40,6 @@
 [submodule "site-lisp/python-environment"]
 	path = site-lisp/python-environment
 	url = git@github.com:tkf/emacs-python-environment.git
+[submodule "site-lisp/flymake-cursor"]
+	path = site-lisp/flymake-cursor
+	url = https://github.com/emacsmirror/flymake-cursor

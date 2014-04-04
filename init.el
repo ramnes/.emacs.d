@@ -19,6 +19,7 @@
 (load "lua-mode")
 (load "php-mode")
 (load "rust-mode")
+(load "flymake-cursor")
 
 ;; Key bindings
 (global-set-key "\C-c\C-c" 'comment-or-uncomment-region)
