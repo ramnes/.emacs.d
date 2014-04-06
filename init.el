@@ -82,6 +82,9 @@
 ;; Overwrite regions
 (delete-selection-mode 1)
 
+;; Hungry deletion
+(setq backward-delete-char-untabify-method 'hungry)
+
 ;; Auto close braces and so (emacs 24+ only)
 (when (>= emacs-major-version 24)
   (electric-pair-mode 1))
