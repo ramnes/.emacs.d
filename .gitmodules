@@ -43,3 +43,6 @@
 [submodule "site-lisp/flymake-cursor"]
 	path = site-lisp/flymake-cursor
 	url = https://github.com/emacsmirror/flymake-cursor
+[submodule "site-lisp/autopair"]
+	path = site-lisp/autopair
+	url = https://github.com/capitaomorte/autopair.git

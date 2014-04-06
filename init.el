@@ -11,6 +11,7 @@
 (load "android-mode")
 (load "auto-complete")
 (load "auto-complete-config")
+(load "autopair")
 (load "column-enforce-mode")
 (load "hlinum")
 (load "jedi")
@@ -85,9 +86,8 @@
 ;; Hungry deletion
 (setq backward-delete-char-untabify-method 'hungry)
 
-;; Auto close braces and so (emacs 24+ only)
-(when (>= emacs-major-version 24)
-  (electric-pair-mode 1))
+;; Auto close braces
+(autopair-global-mode 1)
 
 ;; 80 char rule (for text and prog only)
 (setq-default fill-column 80)
@@ -152,7 +152,8 @@
 (set-face-foreground 'font-lock-type-face "SeaGreen3")
 
 ;; Colors (flymake)
-(set-face-background 'flymake-errline err)
+(set-face-attribute 'flymake-errline nil :inherit nil)
+(set-face-background 'flymake-errline bg)
 (set-face-foreground 'flymake-errline nil)
 
 ;; Colors (auto-complete)
