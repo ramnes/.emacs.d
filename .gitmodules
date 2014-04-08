@@ -46,3 +46,6 @@
 [submodule "site-lisp/autopair"]
 	path = site-lisp/autopair
 	url = https://github.com/capitaomorte/autopair.git
+[submodule "site-lisp/move-border"]
+	path = site-lisp/move-border
+	url = git@github.com:ramnes/move-border.git

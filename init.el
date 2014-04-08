@@ -13,13 +13,14 @@
 (load "auto-complete-config")
 (load "autopair")
 (load "column-enforce-mode")
+(load "flymake-cursor")
 (load "hlinum")
 (load "jedi")
 (load "jinja2-mode")
 (load "lua-mode")
+(load "move-border")
 (load "php-mode")
 (load "rust-mode")
-(load "flymake-cursor")
 
 ;; Load lisp
 (add-to-list 'load-path "~/.emacs.d/lisp")
@@ -86,7 +87,12 @@
 ;; Hungry deletion
 (setq backward-delete-char-untabify-method 'hungry)
 
-;; Auto close braces
+;; Auto close braces (with triple quote support for python)
+(add-hook 'python-mode-hook
+          #'(lambda ()
+              (setq autopair-handle-action-fns
+                    (list #'autopair-default-handle-action
+                          #'autopair-python-triple-quote-action))))
 (autopair-global-mode 1)
 
 ;; 80 char rule (for text and prog only)
