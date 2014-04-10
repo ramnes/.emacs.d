@@ -18,6 +18,7 @@
 (load "jedi")
 (load "jinja2-mode")
 (load "lua-mode")
+(load "markdown-mode")
 (load "move-border")
 (load "php-mode")
 (load "rust-mode")
@@ -109,6 +110,10 @@
 		   "\\(@\\|/\\(/\\|[*][*]?\\)\\)")
 	     (modify-syntax-entry
 	      ?@ "< b" java-mode-syntax-table)))
+
+;; Markdown-mode
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
 ;; Key bindings
 (keys-mode 1)

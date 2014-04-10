@@ -49,3 +49,6 @@
 [submodule "site-lisp/move-border"]
 	path = site-lisp/move-border
 	url = git@github.com:ramnes/move-border.git
+[submodule "site-lisp/markdown-mode"]
+	path = site-lisp/markdown-mode
+	url = https://github.com/defunkt/markdown-mode
