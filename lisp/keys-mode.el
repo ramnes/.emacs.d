@@ -6,6 +6,8 @@
 (defvar keys-mode-map (make-keymap) "keys-mode keymap")
 
 (define-key keys-mode-map (kbd "C-c C-c") 'comment-or-uncomment-region)
+;; last-shell-command is defined in init.el
+(define-key keys-mode-map (kbd "C-c C-j") 'last-shell-command)
 (define-key keys-mode-map (kbd "C-c C-r") 'replace-regexp)
 (define-key keys-mode-map (kbd "C-c C-s") 'replace-string)
 

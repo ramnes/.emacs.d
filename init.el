@@ -27,6 +27,13 @@
 (add-to-list 'load-path "~/.emacs.d/lisp")
 (load "keys-mode")
 
+;; Replay last shell-command or call shell-command
+(defun last-shell-command ()
+  (interactive)
+  (if shell-command-history
+      (shell-command (car shell-command-history))
+    (call-interactively 'shell-command)))
+
 ;; Android
 (setq android-mode-avd "AVD")
 (setq android-mode-sdk-dir "/opt/android-sdk/")
