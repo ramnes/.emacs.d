@@ -3,40 +3,16 @@
 ;; <contact@ramnes.eu>
 ;;
 
-;; Load packages
-(let ((default-directory "~/.emacs.d/site-lisp/"))
+;; Load path
+(let ((default-directory "~/.emacs.d/"))
   (normal-top-level-add-to-load-path '("."))
   (normal-top-level-add-subdirs-to-load-path))
 
-(load "android-mode")
-(load "auto-complete")
-(load "auto-complete-config")
-(load "autopair")
-(load "column-enforce-mode")
-(load "flymake-cursor")
-(load "hlinum")
-(load "jedi")
-(load "jinja2-mode")
-(load "lua-mode")
-(load "markdown-mode")
-(load "move-border")
-(load "php-mode")
-(load "rust-mode")
-
 ;; Load lisp
-(add-to-list 'load-path "~/.emacs.d/lisp")
-(load "keys-mode")
-
-;; Replay last shell-command or call shell-command
-(defun last-shell-command ()
-  (interactive)
-  (if shell-command-history
-      (shell-command (car shell-command-history))
-    (call-interactively 'shell-command)))
-
-;; Android
-(setq android-mode-avd "AVD")
-(setq android-mode-sdk-dir "/opt/android-sdk/")
+(load "init-requires")
+(load "init-funcs")
+(load "init-keys")
+(load "init-theme")
 
 ;; Flymake (from http://www.plope.com/Members/chrism/flymake-mode)
 (when (load "flymake" t)
@@ -56,44 +32,12 @@
              (expand-file-name "~/.emacs.d/auto-complete/dict"))
 (setq ac-comphist-file  "~/.emacs.d/auto-complete/ac-comphist.dat")
 (ac-config-default)
+(ac-linum-workaround)
 
 (setq ac-auto-start 1)
 (setq ac-set-trigger-key "TAB")
 (setq ac-use-fuzzy 1)
 (setq ac-use-quick-help 1)
-
-;; Jedi (Python completion)
-(setq jedi:complete-on-dot t)
-(add-hook 'python-mode-hook 'jedi:setup)
-
-;; Show Line/Char
-(line-number-mode 1)
-(column-number-mode 1)
-
-;; Highlight current line
-(global-hl-line-mode 1)
-(hlinum-activate)
-
-;; Line number (from http://bit.ly/1bUYyIp)
-(setq linum-format 'dynamic)
-(defadvice linum-update-window (around linum-dynamic activate)
-  (let* ((w (length (number-to-string
-                     (count-lines (point-min) (point-max)))))
-         (linum-format (concat "%" (number-to-string w) "d ")))
-    ad-do-it))
-(global-linum-mode 1)
-
-;; Remove emacs shyty top menu
-(menu-bar-mode 0)
-
-;; Auto revert files (useful when changing branch)
-(global-auto-revert-mode 1)
-
-;; Overwrite regions
-(delete-selection-mode 1)
-
-;; Hungry deletion
-(setq backward-delete-char-untabify-method 'hungry)
 
 ;; Auto close braces (with triple quote support for python)
 (add-hook 'python-mode-hook
@@ -112,85 +56,30 @@
 
 ;; Treat Java 1.5 @-style annotations as comments.
 (add-hook 'java-mode-hook
-	  '(lambda ()
-	     (setq c-comment-start-regexp
-		   "\\(@\\|/\\(/\\|[*][*]?\\)\\)")
-	     (modify-syntax-entry
-	      ?@ "< b" java-mode-syntax-table)))
+	  #'(lambda ()
+	      (setq c-comment-start-regexp "\\(@\\|/\\(/\\|[*][*]?\\)\\)")
+	      (modify-syntax-entry ?@ "< b" java-mode-syntax-table)))
+
+;; Setup android-mode
+(setq android-mode-avd "AVD")
+(setq android-mode-sdk-dir "/opt/android-sdk/")
 
 ;; Markdown-mode
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
-;; Key bindings
-(keys-mode 1)
+;; Jedi (Python completion)
+(setq jedi:complete-on-dot t)
+(add-hook 'python-mode-hook 'jedi:setup)
 
-;; Global colors
-(defvar bg "Grey21")
-(defvar fg "Orange")
-(defvar err "Grey10")
+;; Auto revert files (useful when changing branch)
+(global-auto-revert-mode 1)
 
-;; Colors (emacs)
-(set-face-background 'mode-line bg)
-(set-face-background 'mode-line-inactive bg)
-(set-face-background 'popup-face bg)
-(set-face-background 'popup-menu-face bg)
-(set-face-background 'popup-menu-face bg)
-(set-face-background 'query-replace fg)
-(set-face-background 'region bg)
-(set-face-background 'vertical-border nil)
+;; Overwrite regions
+(delete-selection-mode 1)
 
-(set-face-background 'isearch "Orange3")
-(set-face-background 'isearch-fail "IndianRed3")
-(set-face-background 'lazy-highlight "Tan4")
+;; Hungry deletion
+(setq backward-delete-char-untabify-method 'hungry)
 
-(set-face-bold-p 'font-lock-function-name-face 1)
-(set-face-bold-p 'font-lock-keyword-face 1)
-(set-face-bold-p 'font-lock-type-face 1)
-(set-face-bold-p 'minibuffer-prompt 1)
-
-(set-face-foreground 'font-lock-variable-name-face nil)
-(set-face-foreground 'isearch nil)
-(set-face-foreground 'isearch-fail nil)
-(set-face-foreground 'minibuffer-prompt fg)
-(set-face-foreground 'mode-line fg)
-(set-face-foreground 'mode-line-inactive fg)
-(set-face-foreground 'popup-face fg)
-(set-face-foreground 'popup-menu-face fg)
-(set-face-foreground 'region fg)
-(set-face-foreground 'vertical-border bg)
-
-(set-face-foreground 'font-lock-builtin-face "SkyBlue1")
-(set-face-foreground 'font-lock-comment-face "IndianRed3")
-(set-face-foreground 'font-lock-constant-face "Magenta")
-(set-face-foreground 'font-lock-function-name-face "SteelBlue3")
-(set-face-foreground 'font-lock-keyword-face "SkyBlue1")
-(set-face-foreground 'font-lock-preprocessor-face "Magenta")
-(set-face-foreground 'font-lock-string-face "SeaGreen3")
-(set-face-foreground 'font-lock-type-face "SeaGreen3")
-
-;; Colors (flymake)
-(set-face-attribute 'flymake-errline nil :inherit nil)
-(set-face-background 'flymake-errline bg)
-(set-face-foreground 'flymake-errline nil)
-
-;; Colors (auto-complete)
-(set-face-background 'ac-candidate-face "Black")
-(set-face-background 'ac-selection-face fg)
-(set-face-foreground 'ac-candidate-face "White")
-(set-face-foreground 'ac-completion-face fg)
-
-;; Colors (highlight)
-(set-face-background 'hl-line bg)
-(set-face-foreground 'highlight nil)
-
-;; Colors (linum)
-(set-face-background 'linum nil)
-(set-face-background 'linum-highlight-face bg)
-(set-face-bold-p 'linum-highlight-face 1)
-(set-face-foreground 'linum bg)
-(set-face-foreground 'linum-highlight-face fg)
-
-;; Colors (80+ chars)
-(set-face-attribute 'column-enforce-face nil :inherit nil :underline nil)
-(set-face-background 'column-enforce-face err)
+;; Scroll one line at time
+(setq scroll-conservatively 10000)
