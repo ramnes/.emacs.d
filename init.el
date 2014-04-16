@@ -77,6 +77,9 @@
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 
+;; CSS-mode for LESS
+(add-to-list 'auto-mode-alist '("\\.less\\'" . css-mode))
+
 ;; Jedi (Python completion)
 (setq jedi:complete-on-dot t)
 (add-hook 'python-mode-hook 'jedi:setup)
