@@ -17,3 +17,4 @@
 (require 'move-border)
 (require 'php-mode)
 (require 'rust-mode)
+(require 'web-mode)

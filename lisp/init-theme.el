@@ -1,5 +1,5 @@
 ;;
-;; init-faces.el in ramnes/.emacs.d/lisp
+;; init-theme.el in ramnes/.emacs.d/lisp
 ;; <contact@ramnes.eu>
 ;;
 
@@ -87,3 +87,13 @@
 ;; 80col faces
 (set-face-attribute 'column-enforce-face nil :inherit nil :underline nil)
 (set-face-background 'column-enforce-face err)
+
+;; Web-mode faces
+(set-face-attribute 'web-mode-block-delimiter-face nil :inherit nil)
+(set-face-attribute 'web-mode-builtin-face nil :inherit nil)
+(set-face-attribute 'web-mode-html-tag-face nil :inherit font-lock-function-name-face)
+(set-face-attribute 'web-mode-symbol-face nil :inherit font-lock-constant-face)
+(set-face-foreground 'web-mode-html-attr-name-face nil)
+(set-face-foreground 'web-mode-html-tag-bracket-face nil)
+(set-face-foreground 'web-mode-html-tag-face nil)
+(set-face-foreground 'web-mode-symbol-face nil)
