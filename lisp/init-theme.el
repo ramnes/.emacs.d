@@ -22,7 +22,7 @@
 ;; Colors
 (defvar bg "Grey16")
 (defvar fg "SkyBlue1")
-(defvar err "Grey10")
+(defvar err "Black")
 
 ;; Emacs base faces
 (set-face-background 'isearch fg)
@@ -64,7 +64,7 @@
 
 ;; Flymake faces
 (set-face-attribute 'flymake-errline nil :inherit nil)
-(set-face-background 'flymake-errline bg)
+(set-face-background 'flymake-errline err)
 (set-face-foreground 'flymake-errline nil)
 
 ;; Auto-complete faces
