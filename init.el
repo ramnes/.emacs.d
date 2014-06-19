@@ -15,7 +15,8 @@
 (load "init-theme")
 
 ;; Flymake (from http://www.plope.com/Members/chrism/flymake-mode)
-;; updated because of symlinks messing up: http://bit.ly/1pipbJb
+;; updated because of symlinks messing up, see:
+;; http://stackoverflow.com/questions/5793839
 (when (load "flymake" t)
   (defun flymake-pyflakes-init ()
     (let* ((temp-file (flymake-init-create-temp-buffer-copy
@@ -24,6 +25,10 @@
   (add-to-list 'flymake-allowed-file-name-masks
                '("\\.py\\'" flymake-pyflakes-init)))
 (add-hook 'find-file-hook 'flymake-find-file-hook)
+
+;; see: http://stackoverflow.com/questions/7299893
+(defadvice flymake-start-syntax-check-process (after flymake-pyflakes-init () activate compile)
+  (set-process-query-on-exit-flag ad-return-value nil))
 
 ;; Autocompletion
 (add-to-list 'ac-dictionary-directories
