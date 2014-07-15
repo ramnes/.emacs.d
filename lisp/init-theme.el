@@ -18,6 +18,7 @@
 (hlinum-activate)
 (line-number-mode 1)
 (menu-bar-mode 0)
+(diff-mode)
 
 ;; Colors
 (defvar bg "Grey16")
@@ -25,6 +26,10 @@
 (defvar err "Black")
 
 ;; Emacs base faces
+(set-face-background 'diff-added-face nil)
+(set-face-background 'diff-file-header-face nil)
+(set-face-background 'diff-header-face nil)
+(set-face-background 'diff-removed-face nil)
 (set-face-background 'isearch fg)
 (set-face-background 'isearch-fail "SteelBlue3")
 (set-face-background 'lazy-highlight "SkyBlue3")
@@ -42,6 +47,8 @@
 (set-face-bold-p 'font-lock-type-face 1)
 (set-face-bold-p 'minibuffer-prompt 1)
 
+(set-face-foreground 'diff-added-face "AquaMarine3")
+(set-face-foreground 'diff-removed-face "IndianRed3")
 (set-face-foreground 'font-lock-builtin-face "LightSkyBlue1")
 (set-face-foreground 'font-lock-comment-face "IndianRed3")
 (set-face-foreground 'font-lock-constant-face "Magenta")
@@ -51,7 +58,6 @@
 (set-face-foreground 'font-lock-string-face "AquaMarine3")
 (set-face-foreground 'font-lock-type-face "AquaMarine3")
 (set-face-foreground 'font-lock-variable-name-face nil)
-
 (set-face-foreground 'isearch nil)
 (set-face-foreground 'isearch-fail nil)
 (set-face-foreground 'minibuffer-prompt fg)
