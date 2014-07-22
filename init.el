@@ -83,6 +83,13 @@
 ;; CSS-mode for LESS
 (add-to-list 'auto-mode-alist '("\\.less\\'" . css-mode))
 
+;; sh-mode for ebuilds
+(add-to-list 'auto-mode-alist '("\\.ebuild\\'" . sh-mode))
+
+;; YALM-mode
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
+
 ;; Jedi (Python completion)
 (setq jedi:complete-on-dot t)
 (add-hook 'python-mode-hook 'jedi:setup)

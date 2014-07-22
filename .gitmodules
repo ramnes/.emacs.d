@@ -55,3 +55,6 @@
 [submodule "site-lisp/web-mode"]
 	path = site-lisp/web-mode
 	url = https://github.com/fxbois/web-mode.git
+[submodule "site-lisp/yaml-mode"]
+	path = site-lisp/yaml-mode
+	url = git@github.com:yoshiki/yaml-mode.git

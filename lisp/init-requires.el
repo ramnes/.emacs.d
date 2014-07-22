@@ -18,3 +18,4 @@
 (require 'php-mode)
 (require 'rust-mode)
 (require 'web-mode)
+(require 'yaml-mode)
