@@ -105,3 +105,6 @@
 
 ;; Scroll one line at time
 (setq scroll-conservatively 10000)
+
+;; Fix broken Shift-up
+(define-key input-decode-map "\e[1;2A" [S-up])
