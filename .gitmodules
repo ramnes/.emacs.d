@@ -58,3 +58,6 @@
 [submodule "site-lisp/yaml-mode"]
 	path = site-lisp/yaml-mode
 	url = git@github.com:yoshiki/yaml-mode.git
+[submodule "site-lisp/popup-el"]
+	path = site-lisp/popup-el
+	url = git@github.com:auto-complete/popup-el.git

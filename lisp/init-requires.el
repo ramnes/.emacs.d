@@ -16,6 +16,7 @@
 (require 'markdown-mode)
 (require 'move-border)
 (require 'php-mode)
+(require 'popup)
 (require 'rust-mode)
 (require 'web-mode)
 (require 'yaml-mode)
