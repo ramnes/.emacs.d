@@ -106,5 +106,11 @@
 
 ;; Rainbow delimiters faces
 (set-face-foreground 'rainbow-delimiters-depth-1-face "White")
-(set-face-foreground 'rainbow-delimiters-depth-2-face "SkyBlue3")
-(set-face-foreground 'rainbow-delimiters-depth-3-face "SteelBlue3")
+(set-face-foreground 'rainbow-delimiters-depth-2-face "SkyBlue1")
+(set-face-foreground 'rainbow-delimiters-depth-3-face "CadetBlue1")
+(set-face-foreground 'rainbow-delimiters-depth-4-face "Turquoise1")
+(set-face-foreground 'rainbow-delimiters-depth-5-face "DeepSkyBlue1")
+(set-face-foreground 'rainbow-delimiters-depth-6-face "DeepSkyBlue2")
+(set-face-foreground 'rainbow-delimiters-depth-7-face "DodgerBlue1")
+(set-face-foreground 'rainbow-delimiters-depth-8-face "DodgerBlue3")
+(set-face-foreground 'rainbow-delimiters-depth-9-face "DodgerBlue4")
