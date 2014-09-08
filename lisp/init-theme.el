@@ -103,3 +103,8 @@
 (set-face-foreground 'web-mode-html-tag-bracket-face nil)
 (set-face-foreground 'web-mode-html-tag-face nil)
 (set-face-foreground 'web-mode-symbol-face nil)
+
+;; Rainbow delimiters faces
+(set-face-foreground 'rainbow-delimiters-depth-1-face "White")
+(set-face-foreground 'rainbow-delimiters-depth-2-face "SkyBlue3")
+(set-face-foreground 'rainbow-delimiters-depth-3-face "SteelBlue3")

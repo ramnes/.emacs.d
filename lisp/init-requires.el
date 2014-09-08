@@ -17,6 +17,7 @@
 (require 'move-border)
 (require 'php-mode)
 (require 'popup)
+(require 'rainbow-delimiters)
 (require 'rust-mode)
 (require 'web-mode)
 (require 'yaml-mode)

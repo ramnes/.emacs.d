@@ -61,3 +61,6 @@
 [submodule "site-lisp/popup-el"]
 	path = site-lisp/popup-el
 	url = git@github.com:auto-complete/popup-el.git
+[submodule "site-lisp/rainbow-delimiters"]
+	path = site-lisp/rainbow-delimiters
+	url = git@github.com:jlr/rainbow-delimiters.git

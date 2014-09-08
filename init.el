@@ -108,3 +108,6 @@
 
 ;; Fix broken Shift-up
 (define-key input-decode-map "\e[1;2A" [S-up])
+
+;; Rainbow delimiters
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
