@@ -111,3 +111,7 @@
 
 ;; Rainbow delimiters
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+
+;; Avoid annoying "Active processes exist" prompt when quitting Emacs
+(defadvice save-buffers-kill-emacs (around no-query-kill-emacs activate)
+  (flet ((process-list ())) ad-do-it))

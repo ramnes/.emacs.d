@@ -29,13 +29,14 @@
 (add-key "M-<right>" 'windmove-right)
 (add-key "M-<up>" 'windmove-up)
 
-;; windnew* are defined in init.el
+;; windnew* are defined in lisp/init-funcs.el
 (add-key "M-C-<right>" 'windnew-right)
 (add-key "M-C-<down>" 'windnew-down)
 (add-key "M-C-<left>" 'windnew-left)
 (add-key "M-C-<up>" 'windnew-up)
 (add-key "M-C-j" 'windnew-auto)
 (add-key "M-<DEL>" 'windnew-delete)
+(add-key "M-C-i" 'windnew-auto-ipython-with-imports)
 
 ;; dependent of move-border
 ;; https://github.com/ramnes/move-border

@@ -44,3 +44,26 @@
   "Delete the latest windnew (atm, just delete the current window)"
   (interactive)
   (delete-window))
+
+(defun windnew-auto-ipython ()
+  "Create a new window automatically with IPython inside"
+  (interactive)
+  (windnew-auto)
+  (term "/usr/bin/ipython"))
+
+(defun windnew-auto-ipython-with-imports ()
+  "Create a new IPython window and import previous buffer in it"
+  (interactive)
+  (let ((filename (buffer-file-name)))
+    (windnew-auto)
+    (if (and filename (file-exists-p filename))
+	(progn
+	  (set-buffer (make-term "ipython"
+				 "/usr/bin/ipython"
+				 nil
+				 filename
+				 "--TerminalIPythonApp.force_interact=True"))
+	  (term-mode)
+	  (term-char-mode)
+	  (switch-to-buffer "*ipython*"))
+      (term "/usr/bin/ipython"))))
