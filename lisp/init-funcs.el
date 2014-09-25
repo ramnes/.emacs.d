@@ -45,13 +45,7 @@
   (interactive)
   (delete-window))
 
-(defun windnew-auto-ipython ()
-  "Create a new window automatically with IPython inside"
-  (interactive)
-  (windnew-auto)
-  (term "/usr/bin/ipython"))
-
-(defun windnew-auto-ipython-with-imports ()
+(defun windnew-ipython ()
   "Create a new IPython window and import previous buffer in it"
   (interactive)
   (let ((filename (buffer-file-name)))
@@ -67,3 +61,15 @@
 	  (term-char-mode)
 	  (switch-to-buffer "*ipython*"))
       (term "/usr/bin/ipython"))))
+
+;; Use xsel for copy/paste, and avoid Emacs super-slow parsing
+(defun xsel-copy ()
+  (interactive)
+  (if (region-active-p)
+      (progn
+	(shell-command-on-region (region-beginning) (region-end) "xsel -i -b")
+	(deactivate-mark))))
+
+(defun xsel-paste ()
+  (interactive)
+  (insert (shell-command-to-string "xsel -o -b")))
