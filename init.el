@@ -115,3 +115,9 @@
 ;; Avoid annoying "Active processes exist" prompt when quitting Emacs
 (defadvice save-buffers-kill-emacs (around no-query-kill-emacs activate)
   (flet ((process-list ())) ad-do-it))
+
+;; Disable autopair when term-mode
+(add-hook 'term-mode-hook
+	  #'(lambda ()
+	      (setq autopair-dont-activate t)	;; for emacs < 24
+	      (autopair-mode -1)))		;; for emacs >= 24
