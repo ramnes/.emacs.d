@@ -122,3 +122,7 @@
 	  #'(lambda ()
 	      (setq autopair-dont-activate t)	;; for emacs < 24
 	      (autopair-mode -1)))		;; for emacs >= 24
+
+;; Kernel coding style
+(setq c-default-style "linux"
+      c-basic-offset 8)
