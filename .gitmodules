@@ -1,66 +1,66 @@
 [submodule "jedi"]
 	path = site-lisp/jedi
-	url = git@github.com:tkf/emacs-jedi.git
+	url = https://github.com/tkf/emacs-jedi
 [submodule "ctable"]
 	path = site-lisp/ctable
-	url = git@github.com:kiwanami/emacs-ctable.git
+	url = https://github.com/kiwanami/emacs-ctable
 [submodule "deferred"]
 	path = site-lisp/deferred
-	url = git@github.com:kiwanami/emacs-deferred.git
+	url = https://github.com/kiwanami/emacs-deferred
 [submodule "epc"]
 	path = site-lisp/epc
-	url = git@github.com:kiwanami/emacs-epc.git
+	url = https://github.com/kiwanami/emacs-epc
 [submodule "cl-lib"]
 	path = site-lisp/cl-lib
-	url = git@github.com:emacsmirror/cl-lib.git
+	url = https://github.com/emacsmirror/cl-lib
 [submodule "auto-complete"]
 	path = site-lisp/auto-complete
-	url = git@github.com:auto-complete/auto-complete.git
+	url = https://github.com/auto-complete/auto-complete
 [submodule "flymake"]
 	path = site-lisp/flymake
-	url = git@github.com:illusori/emacs-flymake.git
+	url = https://github.com/illusori/emacs-flymake
 [submodule "hlinum"]
 	path = site-lisp/hlinum
-	url = git@github.com:ramnes/hlinum-mode.git
+	url = https://github.com/ramnes/hlinum-mode
 [submodule "site-lisp/android-mode"]
 	path = site-lisp/android-mode
-	url = git@github.com:remvee/android-mode.git
+	url = https://github.com/remvee/android-mode
 [submodule "site-lisp/column-enforce-mode"]
 	path = site-lisp/column-enforce-mode
-	url = git@github.com:jordonbiondo/column-enforce-mode.git
+	url = https://github.com/jordonbiondo/column-enforce-mode
 [submodule "site-lisp/jinja2-mode"]
 	path = site-lisp/jinja2-mode
-	url = git@github.com:paradoxxxzero/jinja2-mode.git
+	url = https://github.com/paradoxxxzero/jinja2-mode
 [submodule "site-lisp/lua-mode"]
 	path = site-lisp/lua-mode
-	url = git@github.com:immerrr/lua-mode.git
+	url = https://github.com/immerrr/lua-mode
 [submodule "site-lisp/php-mode"]
 	path = site-lisp/php-mode
-	url = git@github.com:ejmr/php-mode.git
+	url = https://github.com/ejmr/php-mode
 [submodule "site-lisp/python-environment"]
 	path = site-lisp/python-environment
-	url = git@github.com:tkf/emacs-python-environment.git
+	url = https://github.com/tkf/emacs-python-environment
 [submodule "site-lisp/flymake-cursor"]
 	path = site-lisp/flymake-cursor
-	url = git@github.com/illusori/emacs-flymake-cursor.git
+	url = git@github.com/illusori/emacs-flymake-cursor
 [submodule "site-lisp/autopair"]
 	path = site-lisp/autopair
-	url = git@github.com/capitaomorte/autopair.git
+	url = git@github.com/capitaomorte/autopair
 [submodule "site-lisp/move-border"]
 	path = site-lisp/move-border
-	url = git@github.com:ramnes/move-border.git
+	url = https://github.com/ramnes/move-border
 [submodule "site-lisp/markdown-mode"]
 	path = site-lisp/markdown-mode
-	url = git@github.com/defunkt/markdown-mode.git
+	url = git@github.com/defunkt/markdown-mode
 [submodule "site-lisp/web-mode"]
 	path = site-lisp/web-mode
-	url = git@github.com/fxbois/web-mode.git
+	url = git@github.com/fxbois/web-mode
 [submodule "site-lisp/yaml-mode"]
 	path = site-lisp/yaml-mode
-	url = git@github.com:yoshiki/yaml-mode.git
+	url = https://github.com/yoshiki/yaml-mode
 [submodule "site-lisp/popup-el"]
 	path = site-lisp/popup-el
-	url = git@github.com:auto-complete/popup-el.git
+	url = https://github.com/auto-complete/popup-el
 [submodule "site-lisp/rainbow-delimiters"]
 	path = site-lisp/rainbow-delimiters
-	url = git@github.com:jlr/rainbow-delimiters.git
+	url = https://github.com/jlr/rainbow-delimiters
