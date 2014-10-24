@@ -42,19 +42,19 @@
 	url = https://github.com/tkf/emacs-python-environment
 [submodule "site-lisp/flymake-cursor"]
 	path = site-lisp/flymake-cursor
-	url = git@github.com/illusori/emacs-flymake-cursor
+	url = https://github.com/illusori/emacs-flymake-cursor
 [submodule "site-lisp/autopair"]
 	path = site-lisp/autopair
-	url = git@github.com/capitaomorte/autopair
+	url = https://github.com/capitaomorte/autopair
 [submodule "site-lisp/move-border"]
 	path = site-lisp/move-border
 	url = https://github.com/ramnes/move-border
 [submodule "site-lisp/markdown-mode"]
 	path = site-lisp/markdown-mode
-	url = git@github.com/defunkt/markdown-mode
+	url = https://github.com/defunkt/markdown-mode
 [submodule "site-lisp/web-mode"]
 	path = site-lisp/web-mode
-	url = git@github.com/fxbois/web-mode
+	url = https://github.com/fxbois/web-mode
 [submodule "site-lisp/yaml-mode"]
 	path = site-lisp/yaml-mode
 	url = https://github.com/yoshiki/yaml-mode
