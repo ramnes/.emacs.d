@@ -64,3 +64,6 @@
 [submodule "site-lisp/rainbow-delimiters"]
 	path = site-lisp/rainbow-delimiters
 	url = https://github.com/jlr/rainbow-delimiters
+[submodule "site-lisp/mmm-mode"]
+	path = site-lisp/mmm-mode
+	url = https://github.com/purcell/mmm-mode.git

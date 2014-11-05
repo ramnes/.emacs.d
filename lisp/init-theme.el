@@ -114,3 +114,7 @@
 (set-face-foreground 'rainbow-delimiters-depth-7-face "DodgerBlue1")
 (set-face-foreground 'rainbow-delimiters-depth-8-face "DodgerBlue3")
 (set-face-foreground 'rainbow-delimiters-depth-9-face "DodgerBlue4")
+
+;; MMM-Mode faces (only for Python docstrings for now)
+(set-face-background 'mmm-default-submode-face nil)
+(set-face-foreground 'mmm-default-submode-face "AquaMarine3")

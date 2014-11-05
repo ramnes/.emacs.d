@@ -15,6 +15,7 @@
 (require 'lua-mode)
 (require 'markdown-mode)
 (require 'move-border)
+(require 'mmm-mode)
 (require 'php-mode)
 (require 'popup)
 (require 'rainbow-delimiters)

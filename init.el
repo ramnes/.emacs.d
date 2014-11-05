@@ -130,3 +130,13 @@
 ;; Kernel coding style
 (setq c-default-style "linux"
       c-basic-offset 8)
+
+;; MMM-Mode for python-mode and rst-mode on docstrings
+(setq mmm-global-mode 'maybe)
+(mmm-add-classes
+ '((python-rst
+    :submode rst-mode
+    :front "^ *[ru]?\"\"\""
+    :back "\"\"\"$"
+    :end-not-begin t)))
+(mmm-add-mode-ext-class 'python-mode nil 'python-rst)
