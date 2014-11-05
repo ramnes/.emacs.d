@@ -133,6 +133,7 @@
 
 ;; MMM-Mode for python-mode and rst-mode on docstrings
 (setq mmm-global-mode 'maybe)
+(setq mmm-parse-when-idle t)
 (mmm-add-classes
  '((python-rst
     :submode rst-mode
