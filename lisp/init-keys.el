@@ -22,9 +22,8 @@
 (add-key "C-l" 'goto-line)
 (add-key "C-v" 'sort-lines)
 
-(add-key "C-x C-b" 'buffer-menu)
+(add-key "C-x C-b" 'ibuffer)
 (add-key "C-x C-k" 'kill-buffer-and-window)
-(add-key "C-x b" 'buffer-menu)
 (add-key "C-x k" 'kill-buffer)
 
 (add-key "M-<DEL>" 'windnew-delete)

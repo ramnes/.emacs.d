@@ -137,7 +137,7 @@
 (mmm-add-classes
  '((python-rst
     :submode rst-mode
-    :front "^ *[ru]?\"\"\""
+    :front "\"\"\""
     :back "\"\"\"$"
     :end-not-begin t)))
 (mmm-add-mode-ext-class 'python-mode nil 'python-rst)

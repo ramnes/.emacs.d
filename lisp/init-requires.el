@@ -21,4 +21,5 @@
 (require 'rainbow-delimiters)
 (require 'rust-mode)
 (require 'web-mode)
+(require 'wikitext-mode)
 (require 'yaml-mode)
