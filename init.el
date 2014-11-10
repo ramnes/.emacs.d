@@ -141,3 +141,7 @@
     :back "\"\"\"$"
     :end-not-begin t)))
 (mmm-add-mode-ext-class 'python-mode nil 'python-rst)
+
+;; Split vertically by default
+(setq split-height-threshold nil)
+(setq split-width-threshold 160)
