@@ -40,6 +40,7 @@
 (ac-linum-workaround)
 
 (setq ac-auto-start 1)
+(setq ac-ignore-case nil)
 (setq ac-set-trigger-key "TAB")
 (setq ac-use-fuzzy 1)
 (setq ac-use-quick-help 1)
