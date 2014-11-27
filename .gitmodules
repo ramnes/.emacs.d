@@ -40,9 +40,6 @@
 [submodule "site-lisp/python-environment"]
 	path = site-lisp/python-environment
 	url = https://github.com/tkf/emacs-python-environment
-[submodule "site-lisp/flymake-cursor"]
-	path = site-lisp/flymake-cursor
-	url = https://github.com/illusori/emacs-flymake-cursor
 [submodule "site-lisp/autopair"]
 	path = site-lisp/autopair
 	url = https://github.com/capitaomorte/autopair
@@ -66,4 +63,7 @@
 	url = https://github.com/jlr/rainbow-delimiters
 [submodule "site-lisp/mmm-mode"]
 	path = site-lisp/mmm-mode
-	url = https://github.com/purcell/mmm-mode.git
+	url = https://github.com/purcell/mmm-mode
+[submodule "site-lisp/flymake-cursor"]
+	path = site-lisp/flymake-cursor
+	url = https://github.com/illusori/emacs-flymake-cursor
