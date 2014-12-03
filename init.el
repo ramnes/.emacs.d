@@ -8,6 +8,7 @@
   (normal-top-level-add-to-load-path '("."))
   (normal-top-level-add-subdirs-to-load-path))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
+(setq exec-path (append exec-path '("~/.emacs.d/bin")))
 
 ;; Load lisp
 (load "init-requires")
@@ -15,16 +16,14 @@
 (load "init-keys")
 (load "init-theme")
 
-;; Flymake (from http://www.plope.com/Members/chrism/flymake-mode)
-;; updated because of symlinks messing up, see:
-;; http://stackoverflow.com/questions/5793839
+;; Flymake
 (when (load "flymake" t)
-  (defun flymake-pyflakes-init ()
+  (defun flymake-pycheck-init ()
     (let* ((temp-file (flymake-init-create-temp-buffer-copy
-                       'flymake-create-temp-inplace)))
-      (list "pyflakes" (list temp-file))))
+		       'flymake-create-temp-inplace)))
+      (list "pycheck" (list temp-file))))
   (add-to-list 'flymake-allowed-file-name-masks
-               '("\\.py\\'" flymake-pyflakes-init)))
+	       '("\\.py\\'" flymake-pycheck-init)))
 (add-hook 'find-file-hook 'flymake-find-file-hook)
 
 ;; see: http://stackoverflow.com/questions/7299893

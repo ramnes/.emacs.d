@@ -17,6 +17,7 @@
 (add-key "C-c C-j" 'last-shell-command)
 (add-key "C-c C-r" 'replace-regexp)
 (add-key "C-c C-s" 'replace-string)
+(add-key "C-c /" 'flymake-goto-next-error)
 
 (add-key "C-f" 'fill-region)
 (add-key "C-l" 'goto-line)
