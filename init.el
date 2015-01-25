@@ -145,3 +145,6 @@
 ;; Split vertically by default
 (setq split-height-threshold nil)
 (setq split-width-threshold 160)
+
+;; Replace yes or no by y or n
+(defalias 'yes-or-no-p 'y-or-n-p)
