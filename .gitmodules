@@ -10,9 +10,6 @@
 [submodule "epc"]
 	path = site-lisp/epc
 	url = https://github.com/kiwanami/emacs-epc
-[submodule "cl-lib"]
-	path = site-lisp/cl-lib
-	url = https://github.com/emacsmirror/cl-lib
 [submodule "auto-complete"]
 	path = site-lisp/auto-complete
 	url = https://github.com/auto-complete/auto-complete
@@ -70,3 +67,6 @@
 [submodule "site-lisp/rust-mode"]
 	path = site-lisp/rust-mode
 	url = https://github.com/rust-lang/rust-mode.git
+[submodule "site-lisp/cl-lib"]
+	path = site-lisp/cl-lib
+	url = https://github.com/emacsmirror/cl-lib.git
