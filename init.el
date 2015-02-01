@@ -117,6 +117,9 @@
 ;; Disable electric-indent-mode (by default in 24.4)
 (electric-indent-mode 0)
 
+;; Always indent with spaces
+(setq-default indent-tabs-mode nil)
+
 ;; Avoid annoying "Active processes exist" prompt when quitting Emacs
 (defadvice save-buffers-kill-emacs (around no-query-kill-emacs activate)
   (flet ((process-list ())) ad-do-it))
