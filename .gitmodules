@@ -67,3 +67,6 @@
 [submodule "site-lisp/flymake-cursor"]
 	path = site-lisp/flymake-cursor
 	url = https://github.com/illusori/emacs-flymake-cursor
+[submodule "site-lisp/rust-mode"]
+	path = site-lisp/rust-mode
+	url = https://github.com/rust-lang/rust-mode.git
