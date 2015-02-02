@@ -141,7 +141,7 @@
  '((python-rst
     :submode rst-mode
     :front "\"\"\""
-    :back "\"\"\"$"
+    :back "\"\"\""
     :end-not-begin t)))
 (mmm-add-mode-ext-class 'python-mode nil 'python-rst)
 
