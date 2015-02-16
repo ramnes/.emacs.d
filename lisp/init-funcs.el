@@ -1,3 +1,4 @@
+
 ;;
 ;; init-funcs.el in ramnes/.emacs.d/lisp
 ;; <contact@ramnes.eu>
@@ -52,11 +53,9 @@
     (windnew-auto)
     (if (and filename (file-exists-p filename))
 	(progn
-	  (set-buffer (make-term "ipython"
-				 "/usr/bin/ipython"
-				 nil
-				 filename
-				 "--TerminalIPythonApp.force_interact=True"))
+	  (set-buffer
+           (make-term "ipython" "/usr/bin/env" nil "ipython" filename
+                      "--TerminalIPythonApp.force_interact=True"))
 	  (term-mode)
 	  (term-char-mode)
 	  (switch-to-buffer "*ipython*"))
