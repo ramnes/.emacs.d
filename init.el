@@ -151,3 +151,9 @@
 
 ;; Replace yes or no by y or n
 (defalias 'yes-or-no-p 'y-or-n-p)
+
+;; Accept to use <return> in multiple-cursors
+;; Use C-g to quit
+(eval-after-load "multiple-cursors-core"
+  '(progn
+     (define-key mc/keymap (kbd "<return>") nil)))
