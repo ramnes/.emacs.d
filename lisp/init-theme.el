@@ -21,9 +21,9 @@
 (diff-mode)
 
 ;; Colors
-(defvar bg "Grey16")
+(defvar bg "Grey24")
 (defvar fg "SkyBlue1")
-(defvar err "Black")
+(defvar err "Grey26")
 
 ;; Emacs base faces
 (set-face-background 'diff-added-face nil)
