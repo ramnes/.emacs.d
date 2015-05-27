@@ -25,6 +25,7 @@
   (add-to-list 'flymake-allowed-file-name-masks
 	       '("\\.py\\'" flymake-pycheck-init)))
 (add-hook 'find-file-hook 'flymake-find-file-hook)
+(delete '("\\.html?\\'" flymake-xml-init) flymake-allowed-file-name-masks)
 
 ;; see: http://stackoverflow.com/questions/7299893
 (defadvice flymake-start-syntax-check-process
