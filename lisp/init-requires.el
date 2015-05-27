@@ -8,6 +8,7 @@
 (require 'auto-complete-config)
 (require 'autopair)
 (require 'column-enforce-mode)
+(require 'go-mode-autoloads)
 (require 'flymake-cursor)
 (require 'hlinum)
 (require 'jedi)
