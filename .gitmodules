@@ -67,9 +67,6 @@
 [submodule "site-lisp/rust-mode"]
 	path = site-lisp/rust-mode
 	url = https://github.com/rust-lang/rust-mode.git
-[submodule "site-lisp/cl-lib"]
-	path = site-lisp/cl-lib
-	url = https://github.com/emacsmirror/cl-lib.git
 [submodule "site-lisp/multiple-cursors"]
 	path = site-lisp/multiple-cursors
 	url = https://github.com/magnars/multiple-cursors.el.git

@@ -1,7 +1,7 @@
 .emacs.d
 ========
 
-My emacs24-nox (or at least 23+) configuration, mainly for Python programming.
+My Emacs 24+ (-nw) configuration, mainly for Python programming.
 
 Dependencies
 -----------
