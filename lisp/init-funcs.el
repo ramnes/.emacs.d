@@ -1,11 +1,17 @@
-
 ;;
 ;; init-funcs.el in ramnes/.emacs.d/lisp
 ;; <contact@ramnes.eu>
 ;;
 
-;; Replay last shell-command or call shell-command
+(defun kill-region-or-backward-word ()
+  "If the region is active and non-empty, call `kill-region'.
+Otherwise, call `backward-kill-word'."
+  (interactive)
+  (call-interactively
+   (if (use-region-p) 'kill-region 'backward-kill-word)))
+
 (defun last-shell-command ()
+  "Replay last `shell-command` or call `shell-command`"
   (interactive)
   (if shell-command-history
       (shell-command (car shell-command-history))

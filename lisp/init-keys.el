@@ -23,6 +23,7 @@
 (add-key "C-f" 'fill-region)
 (add-key "C-l" 'goto-line)
 (add-key "C-v" 'sort-lines)
+(add-key "C-w" 'kill-region-or-backward-word)
 
 (add-key "C-x C-b" 'ibuffer)
 (add-key "C-x C-k" 'kill-buffer-and-window)
