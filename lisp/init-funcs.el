@@ -54,6 +54,7 @@ Otherwise, call `backward-kill-word'."
 
 (defun windnew-ipython ()
   "Create a new IPython window and import previous buffer in it"
+  ;; TODO: check if already in an *ipython* buffer; if so, reload it
   (interactive)
   (let ((filename (buffer-file-name)))
     (windnew-auto)
