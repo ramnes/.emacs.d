@@ -158,3 +158,8 @@
 (eval-after-load "multiple-cursors-core"
   '(progn
      (define-key mc/keymap (kbd "<return>") nil)))
+
+;; Avoid the useless prompt when killing a live process
+(setq kill-buffer-query-functions
+      (remq 'process-kill-buffer-query-function
+            kill-buffer-query-functions))
