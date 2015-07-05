@@ -29,7 +29,7 @@
 
 ;; see: http://stackoverflow.com/questions/7299893
 (defadvice flymake-start-syntax-check-process
-    (after flymake-pyflakes-init () activate compile)
+  (after flymake-pyflakes-init () activate compile)
   (set-process-query-on-exit-flag ad-return-value nil))
 
 ;; Autocompletion
