@@ -62,21 +62,29 @@ Otherwise, call `backward-kill-word'."
   (term-mode)
   (term-char-mode)
   (switch-to-buffer "*ipython*")
-  (make-local-variable 'filename))
+  (setq-local origin filename))
 
-(defun reload-ipython ()
+(defun reload-ipython (&optional filename)
   (interactive)
-  (setq tmp filename)
+  (setq window (get-buffer-window "*ipython*"))
+  (if window
+      (select-window window)
+    (windnew-auto)
+    (set-buffer "*ipython*"))
+  (if (not filename)
+      (setq filename origin))
   (kill-buffer)
-  (load-ipython tmp))
+  (load-ipython filename))
 
 (defun windnew-ipython ()
   "Create a new IPython buffer from current buffer or reload it"
   (interactive)
   (if (string= (buffer-name) "*ipython*")
       (reload-ipython)
-    (windnew-auto)
-    (load-ipython (buffer-file-name))))
+    (if (get-buffer "*ipython*")
+        (reload-ipython (buffer-file-name))
+      (windnew-auto)
+      (load-ipython (buffer-file-name)))))
 
 ;; Use xsel for copy/paste, and avoid Emacs super-slow parsing
 (defun xsel-copy ()
