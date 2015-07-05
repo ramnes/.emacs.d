@@ -52,21 +52,31 @@ Otherwise, call `backward-kill-word'."
   (interactive)
   (delete-window))
 
-(defun windnew-ipython ()
-  "Create a new IPython window and import previous buffer in it"
-  ;; TODO: check if already in an *ipython* buffer; if so, reload it
+;; IPython related stuff
+(defun load-ipython (&optional filename)
+  "Create a new Ipython buffer, optionnaly running a given file"
   (interactive)
-  (let ((filename (buffer-file-name)))
+  (set-buffer
+   (make-term "ipython" "/usr/bin/env" nil "ipython" (or filename "")
+              "--TerminalIPythonApp.force_interact=True"))
+  (term-mode)
+  (term-char-mode)
+  (switch-to-buffer "*ipython*")
+  (make-local-variable 'filename))
+
+(defun reload-ipython ()
+  (interactive)
+  (setq tmp filename)
+  (kill-buffer)
+  (load-ipython tmp))
+
+(defun windnew-ipython ()
+  "Create a new IPython buffer from current buffer or reload it"
+  (interactive)
+  (if (string= (buffer-name) "*ipython*")
+      (reload-ipython)
     (windnew-auto)
-    (if (and filename (file-exists-p filename))
-	(progn
-	  (set-buffer
-           (make-term "ipython" "/usr/bin/env" nil "ipython" filename
-                      "--TerminalIPythonApp.force_interact=True"))
-	  (term-mode)
-	  (term-char-mode)
-	  (switch-to-buffer "*ipython*"))
-      (term "/usr/bin/ipython"))))
+    (load-ipython (buffer-file-name))))
 
 ;; Use xsel for copy/paste, and avoid Emacs super-slow parsing
 (defun xsel-copy ()
