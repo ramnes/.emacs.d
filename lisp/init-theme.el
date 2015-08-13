@@ -118,3 +118,13 @@
 ;; MMM-Mode faces (only for Python docstrings for now)
 (set-face-background 'mmm-default-submode-face nil)
 (set-face-foreground 'mmm-default-submode-face "AquaMarine3")
+
+;; helm
+(set-face-background 'helm-selection fg)
+(set-face-background 'helm-source-header bg)
+(set-face-foreground 'helm-selection nil)
+(set-face-foreground 'helm-source-header fg)
+
+;; helm-swoop
+(set-face-background 'helm-swoop-target-line-face bg)
+(set-face-foreground 'helm-swoop-target-line-face nil)
