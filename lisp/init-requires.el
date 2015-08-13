@@ -10,6 +10,8 @@
 (require 'column-enforce-mode)
 (require 'go-mode-autoloads)
 (require 'flymake-cursor)
+(require 'helm)
+(require 'helm-swoop)
 (require 'hlinum)
 (require 'jedi)
 (require 'jinja2-mode)

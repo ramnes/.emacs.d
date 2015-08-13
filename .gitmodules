@@ -73,3 +73,9 @@
 [submodule "site-lisp/go-mode"]
 	path = site-lisp/go-mode
 	url = https://github.com/dominikh/go-mode.el.git
+[submodule "site-lisp/helm-swoop"]
+	path = site-lisp/helm-swoop
+	url = https://github.com/ShingoFukuyama/helm-swoop
+[submodule "site-lisp/helm"]
+	path = site-lisp/helm
+	url = https://github.com/emacs-helm/helm
