@@ -26,6 +26,7 @@
 (require 'popup)
 (require 'rainbow-delimiters)
 (require 'rust-mode)
+(require 'saveplace)
 (require 'web-mode)
 (require 'wikitext-mode)
 (require 'yaml-mode)

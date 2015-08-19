@@ -165,5 +165,9 @@
 ;; Save without asking when inserting a new word in ispell dictionary
 (setq ispell-silently-savep t)
 
+;; Automatically save cursor position when leaving a file
+(setq-default save-place t)
+
 ;; Use flyspell for git-commit-mode
 (add-hook 'git-commit-mode-hook 'turn-on-flyspell)
+(add-hook 'git-commit-mode-hook (lambda () (toggle-save-place 0)))

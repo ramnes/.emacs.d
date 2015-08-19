@@ -6,3 +6,4 @@ jedi/env
 elpa
 *.elc
 .mc-lists.el
+places
