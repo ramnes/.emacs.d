@@ -22,7 +22,7 @@
 (require 'move-border)
 (require 'mmm-auto)
 (require 'multiple-cursors)
-(require 'php-mode)
+;; (require 'php-mode)
 (require 'popup)
 (require 'rainbow-delimiters)
 (require 'rust-mode)
