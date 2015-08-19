@@ -164,3 +164,6 @@
 
 ;; Save without asking when inserting a new word in ispell dictionary
 (setq ispell-silently-savep t)
+
+;; Use flyspell for git-commit-mode
+(add-hook 'git-commit-mode-hook 'turn-on-flyspell)

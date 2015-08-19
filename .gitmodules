@@ -79,3 +79,6 @@
 [submodule "site-lisp/helm"]
 	path = site-lisp/helm
 	url = https://github.com/emacs-helm/helm
+[submodule "site-lisp/git-commit-mode"]
+	path = site-lisp/git-commit-mode
+	url = https://github.com/rafl/git-commit-mode

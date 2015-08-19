@@ -8,6 +8,7 @@
 (require 'auto-complete-config)
 (require 'autopair)
 (require 'column-enforce-mode)
+(require 'git-commit)
 (require 'go-mode-autoloads)
 (require 'flymake)
 (require 'flymake-cursor)

@@ -128,3 +128,12 @@
 ;; helm-swoop
 (set-face-background 'helm-swoop-target-line-face bg)
 (set-face-foreground 'helm-swoop-target-line-face nil)
+
+;; git-commit-mode
+(set-face-bold-p 'git-commit-branch-face t)
+(set-face-bold-p 'git-commit-summary-face t)
+(set-face-foreground 'git-commit-branch-face "IndianRed2")
+(set-face-foreground 'git-commit-comment-file-face "IndianRed2")
+(set-face-foreground 'git-commit-comment-face "IndianRed3")
+(set-face-foreground 'git-commit-comment-heading-face "IndianRed3")
+(set-face-foreground 'git-commit-summary-face nil)
