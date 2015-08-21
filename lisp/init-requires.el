@@ -24,6 +24,7 @@
 (require 'multiple-cursors)
 ;; (require 'php-mode)
 (require 'popup)
+(require 'rst)
 (require 'rainbow-delimiters)
 (require 'rust-mode)
 (require 'saveplace)

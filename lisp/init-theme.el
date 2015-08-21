@@ -137,3 +137,17 @@
 (set-face-foreground 'git-commit-comment-face "IndianRed3")
 (set-face-foreground 'git-commit-comment-heading-face "IndianRed3")
 (set-face-foreground 'git-commit-summary-face nil)
+
+;; reStructuredText
+(set-face-bold-p 'rst-level-1 t)
+(set-face-bold-p 'rst-level-2 t)
+(set-face-bold-p 'rst-level-3 t)
+(set-face-bold-p 'rst-level-4 t)
+(set-face-bold-p 'rst-level-5 t)
+(set-face-bold-p 'rst-level-6 t)
+(set-face-background 'rst-level-1 nil)
+(set-face-background 'rst-level-2 nil)
+(set-face-background 'rst-level-3 nil)
+(set-face-background 'rst-level-4 nil)
+(set-face-background 'rst-level-5 nil)
+(set-face-background 'rst-level-6 nil)
