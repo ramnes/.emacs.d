@@ -165,6 +165,18 @@
 ;; Save without asking when inserting a new word in ispell dictionary
 (setq ispell-silently-savep t)
 
+;; ac-ispell + flyspell
+(custom-set-variables
+ '(ac-ispell-requires 4))
+
+(eval-after-load "auto-complete"
+  '(progn
+     (ac-ispell-setup)
+     (ac-flyspell-workaround)))
+
+(add-hook 'text-mode-hook 'ac-ispell-ac-setup)
+(add-hook 'text-mode-hook 'flyspell-mode)
+
 ;; Automatically save cursor position when leaving a file
 (setq-default save-place t)
 

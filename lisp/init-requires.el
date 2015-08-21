@@ -4,6 +4,7 @@
 ;;
 
 (require 'android-mode)
+(require 'ac-ispell)
 (require 'auto-complete)
 (require 'auto-complete-config)
 (require 'autopair)

@@ -82,3 +82,6 @@
 [submodule "site-lisp/git-commit-mode"]
 	path = site-lisp/git-commit-mode
 	url = https://github.com/rafl/git-commit-mode
+[submodule "site-lisp/ac-ispell"]
+	path = site-lisp/ac-ispell
+	url = https://github.com/syohex/emacs-ac-ispell
