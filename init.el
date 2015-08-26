@@ -182,4 +182,5 @@
 
 ;; Use flyspell for git-commit-mode
 (add-hook 'git-commit-mode-hook 'turn-on-flyspell)
+(add-hook 'git-commit-mode-hook 'turn-on-auto-fill)
 (add-hook 'git-commit-mode-hook (lambda () (toggle-save-place 0)))
