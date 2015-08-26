@@ -85,3 +85,6 @@
 [submodule "site-lisp/ac-ispell"]
 	path = site-lisp/ac-ispell
 	url = https://github.com/syohex/emacs-ac-ispell
+[submodule "site-lisp/htmlize"]
+	path = site-lisp/htmlize
+	url = https://github.com/emacsmirror/htmlize
