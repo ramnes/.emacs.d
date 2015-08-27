@@ -19,6 +19,7 @@
 (require 'htmlize)
 (require 'jedi)
 (require 'jinja2-mode)
+(require 'json-reformat)
 (require 'lua-mode)
 (require 'markdown-mode)
 (require 'move-border)
