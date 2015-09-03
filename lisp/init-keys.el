@@ -53,6 +53,8 @@
 (add-key "M-S-<right>" 'move-border-right)
 (add-key "M-S-<up>" 'move-border-up)
 
+(add-key "M-s" 'helm-multi-swoop-all)
+
 (define-minor-mode keys-mode
   "Overriding key bindings" t " Keys" 'keys-mode-map)
 
