@@ -13,6 +13,7 @@
 (require 'go-mode-autoloads)
 (require 'flymake)
 (require 'flymake-cursor)
+(require 'git-messenger)
 (require 'helm)
 (require 'helm-swoop)
 (require 'hlinum)

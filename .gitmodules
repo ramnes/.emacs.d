@@ -91,3 +91,6 @@
 [submodule "site-lisp/json-reformat"]
 	path = site-lisp/json-reformat
 	url = https://github.com/gongo/json-reformat
+[submodule "site-lisp/git-messenger"]
+	path = site-lisp/git-messenger
+	url = https://github.com/syohex/emacs-git-messenger
