@@ -184,3 +184,6 @@
 (add-hook 'git-commit-mode-hook 'turn-on-flyspell)
 (add-hook 'git-commit-mode-hook 'turn-on-auto-fill)
 (add-hook 'git-commit-mode-hook (lambda () (toggle-save-place 0)))
+
+;; popwin
+(popwin-mode 1)
