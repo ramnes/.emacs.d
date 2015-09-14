@@ -3,20 +3,7 @@
 ;; <contact@ramnes.eu>
 ;;
 
-;; Line number (from http://bit.ly/1bUYyIp)
-(setq linum-format 'dynamic)
-(defadvice linum-update-window (around linum-dynamic activate)
-  (let* ((w (length (number-to-string
-                     (count-lines (point-min) (point-max)))))
-         (linum-format (concat "%" (number-to-string w) "d ")))
-    ad-do-it))
-
-;; Appearance
-(column-number-mode 1)
-(global-hl-line-mode 1)
-(global-linum-mode 1)
-(hlinum-activate)
-(line-number-mode 1)
+(column-number-mode t)
 (menu-bar-mode 0)
 (diff-mode)
 
@@ -80,15 +67,7 @@
 (set-face-foreground 'ac-completion-face fg)
 
 ;; Highlight faces
-(set-face-background 'hl-line bg)
 (set-face-foreground 'highlight nil)
-
-;; Linum faces
-(set-face-background 'linum nil)
-(set-face-background 'linum-highlight-face bg)
-(set-face-bold-p 'linum-highlight-face 1)
-(set-face-foreground 'linum bg)
-(set-face-foreground 'linum-highlight-face fg)
 
 ;; 80col faces
 (set-face-attribute 'column-enforce-face nil :inherit nil :underline nil)

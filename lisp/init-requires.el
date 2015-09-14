@@ -16,7 +16,6 @@
 (require 'git-messenger)
 (require 'helm)
 (require 'helm-swoop)
-(require 'hlinum)
 (require 'htmlize)
 (require 'jedi)
 (require 'jinja2-mode)
