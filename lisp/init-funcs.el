@@ -43,7 +43,8 @@ Otherwise, call `backward-kill-word'."
 (defun windnew-auto ()
   "Create a new window and decide automatically where it is placed"
   (interactive)
-  (if (< (* 2 (window-height)) (window-width))
+  (if (or (< 160 (window-width))
+          (< (* 2 (window-height)) (window-width)))
       (windnew-right)
     (windnew-down)))
 
