@@ -185,5 +185,8 @@
 (add-hook 'git-commit-mode-hook 'turn-on-auto-fill)
 (add-hook 'git-commit-mode-hook (lambda () (toggle-save-place 0)))
 
+;; git-messenger
+(setq git-messenger:show-detail t)
+
 ;; popwin
 (popwin-mode 1)
