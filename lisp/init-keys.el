@@ -54,7 +54,8 @@
 (add-key "M-S-<up>" 'move-border-up)
 
 (add-key "M-s" 'helm-multi-swoop-all)
-(add-key "M-q" 'git-messenger:popup-message)
+(add-key "M-m" 'git-messenger:popup-message)
+(add-key "M-b" 'vc-annotate)
 
 (define-minor-mode keys-mode
   "Overriding key bindings" t " Keys" 'keys-mode-map)
