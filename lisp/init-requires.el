@@ -25,6 +25,7 @@
 (require 'move-border)
 (require 'mmm-auto)
 (require 'multiple-cursors)
+(require 'nginx-mode)
 ;; (require 'php-mode)
 (require 'popup)
 (require 'popwin)

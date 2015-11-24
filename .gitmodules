@@ -97,3 +97,6 @@
 [submodule "site-lisp/popwin"]
 	path = site-lisp/popwin
 	url = https://github.com/m2ym/popwin-el
+[submodule "site-lisp/nginx-mode"]
+	path = site-lisp/nginx-mode
+	url = https://github.com/ajc/nginx-mode
