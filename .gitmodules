@@ -100,3 +100,6 @@
 [submodule "site-lisp/nginx-mode"]
 	path = site-lisp/nginx-mode
 	url = https://github.com/ajc/nginx-mode
+[submodule "site-lisp/transpose-frame"]
+	path = site-lisp/transpose-frame
+	url = https://github.com/emacsmirror/transpose-frame.git

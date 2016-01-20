@@ -33,6 +33,7 @@
 (require 'rainbow-delimiters)
 (require 'rust-mode)
 (require 'saveplace)
+(require 'transpose-frame)
 (require 'web-mode)
 (require 'wikitext-mode)
 (require 'yaml-mode)
