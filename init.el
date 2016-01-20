@@ -194,3 +194,6 @@
 ;; Enable upcase-region and downcase-region
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
+
+;; Save commands history
+(savehist-mode 1)
