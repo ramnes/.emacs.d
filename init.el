@@ -190,3 +190,7 @@
 
 ;; popwin
 (popwin-mode 1)
+
+;; Enable upcase-region and downcase-region
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
