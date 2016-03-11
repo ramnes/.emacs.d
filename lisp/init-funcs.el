@@ -3,6 +3,14 @@
 ;; <contact@ramnes.eu>
 ;;
 
+(defun isearch-with-region ()
+  "Use region as the isearch text."
+  (when mark-active
+    (let ((region (funcall region-extract-function nil)))
+      (deactivate-mark)
+      (isearch-push-state)
+      (isearch-yank-string region))))
+
 (defun kill-region-or-backward-word ()
   "If the region is active and non-empty, call `kill-region'.
 Otherwise, call `backward-kill-word'."

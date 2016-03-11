@@ -16,6 +16,9 @@
 (load "init-keys")
 (load "init-theme")
 
+;; Make isearch use current region if active
+(add-hook 'isearch-mode-hook #'isearch-with-region)
+
 ;; Enable mouse support
 (require 'mouse)
 (xterm-mouse-mode t)
