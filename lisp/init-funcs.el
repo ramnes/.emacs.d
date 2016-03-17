@@ -11,6 +11,11 @@
       (isearch-push-state)
       (isearch-yank-string region))))
 
+(defun sort-words (reverse beg end)
+  "Sort words in region alphabetically, in reverse if negative."
+  (interactive "*P\nr")
+  (sort-regexp-fields reverse "\\w+" "\\&" beg end))
+
 (defun kill-region-or-backward-word ()
   "If the region is active and non-empty, call `kill-region'.
 Otherwise, call `backward-kill-word'."
