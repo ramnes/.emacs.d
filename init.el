@@ -205,3 +205,6 @@
 (setq desktop-restore-frames t)
 (setq desktop-restore-in-current-display t)
 (setq desktop-restore-forces-onscreen nil)
+
+;; Treat underscores as part of words
+(add-hook 'prog-mode-hook #'(lambda () (modify-syntax-entry ?_ "w")))
