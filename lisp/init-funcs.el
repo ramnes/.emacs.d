@@ -93,15 +93,13 @@ Otherwise, call `backward-kill-word'."
 
 (defun reload-ipython (&optional filename)
   (interactive)
-  (setq window (get-buffer-window "*ipython*"))
-  (if window
-      (select-window window)
-    (windnew-auto)
-    (set-buffer "*ipython*"))
-  (if (not filename)
-      (setq filename origin))
+  (let ((ipython-window (get-buffer-window "*ipython*")))
+    (if ipython-window
+        (select-window ipython-window)
+      (windnew-auto)
+      (set-buffer "*ipython*")))
   (kill-buffer)
-  (load-ipython filename))
+  (load-ipython (or filename origin)))
 
 (defun windnew-ipython ()
   "Create a new IPython buffer from current buffer or reload it"
