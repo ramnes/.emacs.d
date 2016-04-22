@@ -102,4 +102,4 @@
 	url = https://github.com/ajc/nginx-mode
 [submodule "site-lisp/transpose-frame"]
 	path = site-lisp/transpose-frame
-	url = https://github.com/emacsmirror/transpose-frame.git
+	url = https://github.com/flychen50/transpose-frame
