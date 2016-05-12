@@ -6,6 +6,7 @@
 (column-number-mode t)
 (menu-bar-mode 0)
 (diff-mode)
+(set-display-table-slot standard-display-table 'wrap ?\…)
 
 ;; Colors
 (defvar bg "Grey24")
