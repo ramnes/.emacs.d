@@ -90,6 +90,9 @@
 ;; sh-mode for ebuilds
 (add-to-list 'auto-mode-alist '("\\.ebuild\\'" . sh-mode))
 
+;; TypeScript
+(add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode))
+
 ;; YALM-mode
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))

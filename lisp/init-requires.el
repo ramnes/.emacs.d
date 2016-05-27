@@ -34,6 +34,7 @@
 (require 'rust-mode)
 (require 'saveplace)
 (require 'transpose-frame)
+(require 'typescript)
 (require 'web-mode)
 (require 'wikitext-mode)
 (require 'yaml-mode)
