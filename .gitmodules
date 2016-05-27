@@ -103,3 +103,6 @@
 [submodule "site-lisp/transpose-frame"]
 	path = site-lisp/transpose-frame
 	url = https://github.com/flychen50/transpose-frame
+[submodule "site-lisp/emacs-tss"]
+	path = site-lisp/emacs-tss
+	url = https://github.com/aki2o/emacs-tss.git
