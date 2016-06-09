@@ -16,6 +16,7 @@
 (add-key "C-c C-v" 'mc/edit-lines)
 (add-key "C-c C-i" 'indent-region)
 (add-key "C-c C-j" 'last-shell-command)
+(add-key "C-c RET" 'last-shell-command)
 (add-key "C-c C-r" 'replace-regexp)
 (add-key "C-c C-s" 'replace-string)
 (add-key "C-c /" 'flymake-goto-next-error)
