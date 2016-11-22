@@ -106,3 +106,6 @@
 [submodule "site-lisp/emacs-tss"]
 	path = site-lisp/emacs-tss
 	url = https://github.com/aki2o/emacs-tss.git
+[submodule "site-lisp/editorconfig"]
+	path = site-lisp/editorconfig
+	url = https://github.com/editorconfig/editorconfig-emacs.git

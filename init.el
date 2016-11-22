@@ -211,3 +211,6 @@
 
 ;; Treat underscores as part of words
 (add-hook 'prog-mode-hook #'(lambda () (modify-syntax-entry ?_ "w")))
+
+;; Activate editorconfig
+(editorconfig-mode 1)
