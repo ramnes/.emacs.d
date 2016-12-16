@@ -16,6 +16,12 @@
 (load "init-keys")
 (load "init-theme")
 
+;; Don't save backup files in the working directory
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
 ;; Make isearch use current region if active
 (add-hook 'isearch-mode-hook #'isearch-with-region)
 
