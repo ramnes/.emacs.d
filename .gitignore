@@ -1,10 +1,0 @@
-*~
-*.dat
-auto-save-list
-jedi/env
-.python-environments
-elpa
-*.elc
-.mc-lists.el
-places
-history
