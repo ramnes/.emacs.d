@@ -109,3 +109,6 @@
 [submodule "site-lisp/editorconfig"]
 	path = site-lisp/editorconfig
 	url = https://github.com/editorconfig/editorconfig-emacs.git
+[submodule "site-lisp/emacs-git-gutter"]
+	path = site-lisp/emacs-git-gutter
+	url = https://github.com/syohex/emacs-git-gutter.git

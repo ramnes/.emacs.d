@@ -220,3 +220,9 @@
 
 ;; Activate editorconfig
 (editorconfig-mode 1)
+
+;; Show modified lines from git
+(global-git-gutter-mode 1)
+(custom-set-variables
+ '(git-gutter:always-show-separator 1)
+ '(git-gutter:update-interval 1))

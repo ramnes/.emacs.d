@@ -132,3 +132,17 @@
 (set-face-background 'rst-level-4 nil)
 (set-face-background 'rst-level-5 nil)
 (set-face-background 'rst-level-6 nil)
+
+;; git-gutter
+(custom-set-variables
+ '(git-gutter:unchanged-sign "┃")
+ '(git-gutter:modified-sign "┃")
+ '(git-gutter:added-sign "┃")
+ '(git-gutter:deleted-sign "┃"))
+
+(set-face-background 'git-gutter:unchanged nil)
+(set-face-foreground 'git-gutter:unchanged bg)
+(set-face-foreground 'git-gutter:modified "orange")
+(set-face-foreground 'git-gutter:added "AquaMarine3")
+(set-face-foreground 'git-gutter:deleted "IndianRed3")
+(set-face-foreground 'git-gutter:separator bg)
