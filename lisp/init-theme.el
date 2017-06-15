@@ -28,12 +28,17 @@
 (set-face-background 'popup-menu-face bg)
 (set-face-background 'query-replace fg)
 (set-face-background 'region bg)
+(set-face-background 'smerge-markers nil)
+(set-face-background 'smerge-mine bg)
+(set-face-background 'smerge-other bg)
+(set-face-background 'smerge-refined-change bg)
 (set-face-background 'vertical-border nil)
 
 (set-face-bold-p 'font-lock-function-name-face 1)
 (set-face-bold-p 'font-lock-keyword-face 1)
 (set-face-bold-p 'font-lock-type-face 1)
 (set-face-bold-p 'minibuffer-prompt 1)
+(set-face-bold-p 'smerge-markers 1)
 
 (set-face-foreground 'diff-added-face "AquaMarine3")
 (set-face-foreground 'diff-removed-face "IndianRed3")
@@ -54,6 +59,7 @@
 (set-face-foreground 'popup-face fg)
 (set-face-foreground 'popup-menu-face fg)
 (set-face-foreground 'region fg)
+(set-face-foreground 'smerge-markers "Yellow")
 (set-face-foreground 'vertical-border bg)
 
 ;; Flymake faces

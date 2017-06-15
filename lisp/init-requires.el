@@ -35,6 +35,7 @@
 (require 'rst)
 (require 'rust-mode)
 (require 'saveplace)
+(require 'smerge-mode)
 (require 'transpose-frame)
 (require 'typescript)
 (require 'web-mode)
