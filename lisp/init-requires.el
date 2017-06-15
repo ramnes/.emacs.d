@@ -9,6 +9,7 @@
 (require 'auto-complete-config)
 (require 'autopair)
 (require 'column-enforce-mode)
+(require 'ediff)
 (require 'editorconfig)
 (require 'flymake)
 (require 'flymake-cursor)
