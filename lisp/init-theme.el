@@ -153,10 +153,10 @@
 
 ;; git-gutter
 (custom-set-variables
- '(git-gutter:unchanged-sign "┃")
- '(git-gutter:modified-sign "┃")
  '(git-gutter:added-sign "┃")
- '(git-gutter:deleted-sign "┃"))
+ '(git-gutter:deleted-sign "┃")
+ '(git-gutter:modified-sign "┃")
+ '(git-gutter:unchanged-sign "┃"))
 
 (set-face-background 'git-gutter:unchanged nil)
 (set-face-foreground 'git-gutter:unchanged bg)
