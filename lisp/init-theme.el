@@ -53,6 +53,7 @@
 (set-face-bold-p 'smerge-markers 1)
 
 (set-face-foreground 'diff-added-face "AquaMarine3")
+(set-face-foreground 'diff-context "white")
 (set-face-foreground 'diff-removed-face "IndianRed3")
 (set-face-foreground 'font-lock-builtin-face "LightSkyBlue1")
 (set-face-foreground 'font-lock-comment-face "IndianRed3")
