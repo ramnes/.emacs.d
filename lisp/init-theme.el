@@ -46,6 +46,7 @@
 (set-face-background 'smerge-refined-change bg)
 (set-face-background 'vertical-border nil)
 
+(set-face-bold-p 'font-lock-constant-face 1)
 (set-face-bold-p 'font-lock-function-name-face 1)
 (set-face-bold-p 'font-lock-keyword-face 1)
 (set-face-bold-p 'font-lock-type-face 1)
