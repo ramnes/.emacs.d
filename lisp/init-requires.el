@@ -5,6 +5,7 @@
 
 (require 'ac-ispell)
 (require 'android-mode)
+(require 'async)
 (require 'auto-complete)
 (require 'auto-complete-config)
 (require 'autopair)

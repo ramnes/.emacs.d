@@ -118,3 +118,6 @@
 [submodule "site-lisp/dash"]
 	path = site-lisp/dash
 	url = https://github.com/magnars/dash.el.git
+[submodule "site-lisp/async"]
+	path = site-lisp/async
+	url = https://github.com/jwiegley/emacs-async.git
