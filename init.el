@@ -226,3 +226,6 @@
 (custom-set-variables
  '(git-gutter:always-show-separator 1)
  '(git-gutter:update-interval 1))
+
+;; Make pip-requirements use AC
+(add-hook 'pip-requirements-mode-hook #'pip-requirements-auto-complete-setup)

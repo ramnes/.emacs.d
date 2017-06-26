@@ -112,3 +112,9 @@
 [submodule "site-lisp/emacs-git-gutter"]
 	path = site-lisp/emacs-git-gutter
 	url = https://github.com/syohex/emacs-git-gutter.git
+[submodule "site-lisp/pip-requirements"]
+	path = site-lisp/pip-requirements
+	url = https://github.com/Wilfred/pip-requirements.el
+[submodule "site-lisp/dash"]
+	path = site-lisp/dash
+	url = https://github.com/magnars/dash.el.git
