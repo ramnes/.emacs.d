@@ -62,7 +62,6 @@
 
 ;; 80 char rule (for text and prog only)
 (setq-default fill-column 79)
-(add-hook 'text-mode-hook 'auto-fill-mode)
 (add-hook 'prog-mode-hook 'auto-fill-mode)
 
 (setq column-enforce-column 79)
