@@ -1,6 +1,2 @@
 #!/bin/bash
-
-# epylint "$1" 2>/dev/null
-pyflakes "$1"
-pep8 --ignore=E125,E129,E501,W503 --repeat "$1"
-true
+flake8 --ignore=E125,E129,E501,W503 "$1"
