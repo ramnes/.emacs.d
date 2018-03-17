@@ -235,3 +235,10 @@
 
 ;; Make pip-requirements use AC
 (add-hook 'pip-requirements-mode-hook #'pip-requirements-auto-complete-setup)
+
+;; typit
+(defun typit ()
+  (interactive)
+  (require 'typit)
+  (setq typit-dict "french.txt")
+  (typit-basic-test))

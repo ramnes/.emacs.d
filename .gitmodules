@@ -121,3 +121,15 @@
 [submodule "site-lisp/async"]
 	path = site-lisp/async
 	url = https://github.com/jwiegley/emacs-async.git
+[submodule "site-lisp/typit"]
+	path = site-lisp/typit
+	url = https://github.com/mrkkrp/typit.git
+[submodule "site-lisp/f"]
+	path = site-lisp/f
+	url = https://github.com/rejeep/f.el
+[submodule "site-lisp/mmt"]
+	path = site-lisp/mmt
+	url = https://github.com/mrkkrp/mmt.git
+[submodule "site-lisp/s"]
+	path = site-lisp/s
+	url = https://github.com/magnars/s.el.git

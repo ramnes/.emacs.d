@@ -30,6 +30,7 @@
 (set-face-background 'ediff-odd-diff-A err)
 (set-face-background 'ediff-odd-diff-B err)
 (set-face-background 'ediff-odd-diff-C err)
+(set-face-background 'highlight bg)
 (set-face-background 'isearch fg)
 (set-face-background 'isearch-fail "SteelBlue3")
 (set-face-background 'lazy-highlight "SkyBlue3")
