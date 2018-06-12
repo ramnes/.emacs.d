@@ -8,3 +8,4 @@ elpa
 .mc-lists.el
 places
 history
+eshell/
