@@ -242,3 +242,11 @@
   (require 'typit)
   (setq typit-dict "french.txt")
   (typit-basic-test))
+
+;; If there is no symbol at the cursor, use the last used words instead.
+(setq helm-swoop-pre-input-function
+      (lambda ()
+        (let (($pre-input (thing-at-point 'symbol)))
+          (if (eq (length $pre-input) 0)
+              helm-swoop-pattern
+            $pre-input))))
