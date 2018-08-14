@@ -12,6 +12,7 @@
 (defvar bg "Grey24")
 (defvar fg "SkyBlue1")
 (defvar err "Grey26")
+(defvar warn "Grey26")
 
 ;; Emacs base faces
 (set-face-background 'diff-added-face nil)
@@ -78,9 +79,12 @@
 (set-face-foreground 'vertical-border bg)
 
 ;; Flymake faces
-(set-face-attribute 'flymake-errline nil :inherit nil)
-(set-face-background 'flymake-errline err)
-(set-face-foreground 'flymake-errline nil)
+(set-face-attribute 'flymake-error nil :inherit nil)
+(set-face-attribute 'flymake-warning nil :inherit nil)
+(set-face-background 'flymake-error err)
+(set-face-background 'flymake-warning warn)
+(set-face-foreground 'flymake-error nil)
+(set-face-foreground 'flymake-warning nil)
 
 ;; Auto-complete faces
 (set-face-background 'ac-candidate-face "Black")

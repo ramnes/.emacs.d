@@ -31,18 +31,8 @@
 (add-hook 'isearch-mode-hook #'isearch-with-region)
 
 ;; Flymake
-(when (load "flymake" t)
-  (defun flymake-pycheck-init ()
-    (let* ((temp-file (flymake-init-create-temp-buffer-copy
-		       'flymake-create-temp-inplace)))
-      (list "pycheck" (list temp-file))))
-  (setq flymake-allowed-file-name-masks '(("\\.py\\'" flymake-pycheck-init))))
-(add-hook 'find-file-hook 'flymake-find-file-hook)
-
-;; see: http://stackoverflow.com/questions/7299893
-(defadvice flymake-start-syntax-check-process
-  (after flymake-pyflakes-init () activate compile)
-  (set-process-query-on-exit-flag ad-return-value nil))
+(setq python-flymake-command '("pycheck" "-"))
+(add-hook 'prog-mode-hook 'flymake-mode)
 
 ;; Autocompletion
 (add-to-list 'ac-dictionary-directories

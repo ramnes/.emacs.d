@@ -13,9 +13,6 @@
 [submodule "auto-complete"]
 	path = site-lisp/auto-complete
 	url = https://github.com/auto-complete/auto-complete
-[submodule "flymake"]
-	path = site-lisp/flymake
-	url = https://github.com/illusori/emacs-flymake
 [submodule "hlinum"]
 	path = site-lisp/hlinum
 	url = https://github.com/ramnes/hlinum-mode
@@ -61,9 +58,6 @@
 [submodule "site-lisp/mmm-mode"]
 	path = site-lisp/mmm-mode
 	url = https://github.com/purcell/mmm-mode
-[submodule "site-lisp/flymake-cursor"]
-	path = site-lisp/flymake-cursor
-	url = https://github.com/illusori/emacs-flymake-cursor
 [submodule "site-lisp/rust-mode"]
 	path = site-lisp/rust-mode
 	url = https://github.com/rust-lang/rust-mode
