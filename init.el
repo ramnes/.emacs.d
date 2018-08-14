@@ -32,6 +32,8 @@
 
 ;; Flymake
 (setq python-flymake-command '("pycheck" "-"))
+(eval-after-load 'flymake
+  (add-hook 'flymake-mode-hook #'flymake-diagnostic-at-point-mode))
 (add-hook 'prog-mode-hook 'flymake-mode)
 
 ;; Autocompletion
