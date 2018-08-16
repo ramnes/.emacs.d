@@ -129,4 +129,4 @@
 	url = https://github.com/magnars/s.el.git
 [submodule "site-lisp/flymake-diagnostic-at-point"]
 	path = site-lisp/flymake-diagnostic-at-point
-	url = https://github.com/ramnes/flymake-diagnostic-at-point.git
+	url = https://github.com/meqif/flymake-diagnostic-at-point.git
