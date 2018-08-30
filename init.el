@@ -236,6 +236,7 @@
   (typit-basic-test))
 
 ;; If there is no symbol at the cursor, use the last used words instead.
+(setq helm-swoop-pattern "")
 (setq helm-swoop-pre-input-function
       (lambda ()
         (let (($pre-input (thing-at-point 'symbol)))
