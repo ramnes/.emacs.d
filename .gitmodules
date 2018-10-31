@@ -130,3 +130,6 @@
 [submodule "site-lisp/flymake-diagnostic-at-point"]
 	path = site-lisp/flymake-diagnostic-at-point
 	url = https://github.com/meqif/flymake-diagnostic-at-point.git
+[submodule "site-lisp/dockerfile-mode"]
+	path = site-lisp/dockerfile-mode
+	url = https://github.com/spotify/dockerfile-mode.git

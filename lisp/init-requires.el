@@ -11,6 +11,7 @@
 (require 'autopair)
 (require 'column-enforce-mode)
 (require 'dash)
+(require 'dockerfile-mode)
 (require 'ediff)
 (require 'editorconfig)
 (require 'flymake)
