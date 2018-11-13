@@ -103,6 +103,8 @@
 ;; YALM-mode
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
+(add-hook 'yaml-mode-hook (lambda () (flyspell-mode -1)))
+(add-hook 'yaml-mode-hook (lambda () (auto-complete-mode -1)))
 
 ;; Jedi (Python completion)
 (setq jedi:complete-on-dot t)
