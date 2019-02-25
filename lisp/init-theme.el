@@ -48,6 +48,7 @@
 (set-face-bold-p 'font-lock-function-name-face 1)
 (set-face-bold-p 'font-lock-keyword-face 1)
 (set-face-bold-p 'font-lock-type-face 1)
+(set-face-bold-p 'font-lock-variable-name-face 1)
 (set-face-bold-p 'minibuffer-prompt 1)
 (set-face-bold-p 'smerge-markers 1)
 
