@@ -133,3 +133,6 @@
 [submodule "site-lisp/dockerfile-mode"]
 	path = site-lisp/dockerfile-mode
 	url = https://github.com/spotify/dockerfile-mode.git
+[submodule "site-lisp/flymake-go"]
+	path = site-lisp/flymake-go
+	url = https://github.com/robert-zaremba/flymake-go.git

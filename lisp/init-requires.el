@@ -15,6 +15,7 @@
 (require 'ediff)
 (require 'editorconfig)
 (require 'flymake)
+(require 'flymake-go)
 (require 'flymake-diagnostic-at-point)
 (require 'git-commit)
 (require 'git-gutter)
