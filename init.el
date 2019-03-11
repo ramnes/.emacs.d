@@ -249,7 +249,8 @@
               helm-swoop-pattern
             $pre-input))))
 
-;; Mimic Python bindings for Go
+;; Go: mimic Python bindings, gofmt before save
 (eval-after-load "go-mode"
   '(progn
-     (define-key go-mode-map (kbd "C-c .") 'godef-jump)))
+     (define-key go-mode-map (kbd "C-c .") 'godef-jump)
+     (add-hook 'before-save-hook #'gofmt-before-save)))
