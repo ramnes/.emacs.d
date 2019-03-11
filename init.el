@@ -248,3 +248,8 @@
           (if (eq (length $pre-input) 0)
               helm-swoop-pattern
             $pre-input))))
+
+;; Mimic Python bindings for Go
+(eval-after-load "go-mode"
+  '(progn
+     (define-key go-mode-map (kbd "C-c .") 'godef-jump)))
