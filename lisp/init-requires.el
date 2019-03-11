@@ -20,6 +20,7 @@
 (require 'git-commit)
 (require 'git-gutter)
 (require 'git-messenger)
+(require 'go-autocomplete)
 (require 'go-mode-autoloads)
 (require 'helm)
 (require 'helm-swoop)
