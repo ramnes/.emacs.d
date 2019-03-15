@@ -97,6 +97,9 @@
 ;; sh-mode for ebuilds
 (add-to-list 'auto-mode-alist '("\\.ebuild\\'" . sh-mode))
 
+;; flymake for sh-mode
+(add-hook 'sh-mode-hook 'flymake-shellcheck-load)
+
 ;; TypeScript
 (add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode))
 

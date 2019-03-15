@@ -136,3 +136,6 @@
 [submodule "site-lisp/flymake-go"]
 	path = site-lisp/flymake-go
 	url = https://github.com/robert-zaremba/flymake-go.git
+[submodule "site-lisp/flymake-shellcheck"]
+	path = site-lisp/flymake-shellcheck
+	url = https://github.com/federicotdn/flymake-shellcheck.git

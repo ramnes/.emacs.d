@@ -17,6 +17,7 @@
 (require 'flymake)
 (require 'flymake-go)
 (require 'flymake-diagnostic-at-point)
+(require 'flymake-shellcheck)
 (require 'git-commit)
 (require 'git-gutter)
 (require 'git-messenger)
