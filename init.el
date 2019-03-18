@@ -258,3 +258,10 @@
      (define-key go-mode-map (kbd "C-c .") 'godef-jump)
      (setq gofmt-command "goimports")
      (add-hook 'before-save-hook #'gofmt-before-save)))
+
+
+;; Markdown: mimic Python bindings
+(add-hook 'markdown-mode-hook
+          #'(lambda ()
+              (define-key markdown-mode-map (kbd "C-c .")
+                'markdown-follow-thing-at-point)))
