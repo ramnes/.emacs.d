@@ -7,7 +7,8 @@
 (let ((default-directory "~/.emacs.d/site-lisp/"))
   (normal-top-level-add-to-load-path '("."))
   (normal-top-level-add-subdirs-to-load-path))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
+(add-to-list 'load-path "~/.emacs.d/lisp")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/magit/lisp")
 (setq exec-path (append exec-path '("~/.emacs.d/bin")))
 
 ;; Create go-mode-autoloads if it doesn't exist yet
@@ -202,6 +203,7 @@
 (add-hook 'git-commit-mode-hook 'turn-on-flyspell)
 (add-hook 'git-commit-mode-hook 'turn-on-auto-fill)
 (add-hook 'git-commit-mode-hook (lambda () (toggle-save-place 0)))
+(add-hook 'git-commit-mode-hook 'magit-diff-while-committing)
 
 ;; git-messenger
 (setq git-messenger:show-detail t)

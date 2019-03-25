@@ -128,16 +128,6 @@
 (set-face-background 'helm-swoop-target-line-face background)
 (set-face-foreground 'helm-swoop-target-line-face nil)
 
-;; git-commit-mode
-(set-face-bold 'git-commit-branch-face t)
-(set-face-bold 'git-commit-summary-face t)
-(set-face-foreground 'git-commit-branch-face "IndianRed2")
-(set-face-foreground 'git-commit-comment-face "IndianRed3")
-(set-face-foreground 'git-commit-comment-file-face "IndianRed2")
-(set-face-foreground 'git-commit-comment-heading-face "IndianRed3")
-(set-face-foreground 'git-commit-overlong-summary-face nil)
-(set-face-foreground 'git-commit-summary-face nil)
-
 ;; reStructuredText
 (set-face-bold 'rst-level-1 t)
 (set-face-bold 'rst-level-2 t)

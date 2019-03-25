@@ -73,9 +73,6 @@
 [submodule "site-lisp/helm"]
 	path = site-lisp/helm
 	url = https://github.com/emacs-helm/helm
-[submodule "site-lisp/git-commit-mode"]
-	path = site-lisp/git-commit-mode
-	url = https://github.com/rafl/git-commit-mode
 [submodule "site-lisp/ac-ispell"]
 	path = site-lisp/ac-ispell
 	url = https://github.com/syohex/emacs-ac-ispell
@@ -139,3 +136,15 @@
 [submodule "site-lisp/flymake-shellcheck"]
 	path = site-lisp/flymake-shellcheck
 	url = https://github.com/federicotdn/flymake-shellcheck.git
+[submodule "site-lisp/magit"]
+	path = site-lisp/magit
+	url = https://github.com/magit/magit.git
+[submodule "site-lisp/with-editor"]
+	path = site-lisp/with-editor
+	url = https://github.com/magit/with-editor.git
+[submodule "site-lisp/transient"]
+	path = site-lisp/transient
+	url = https://github.com/magit/transient.git
+[submodule "site-lisp/hydra"]
+	path = site-lisp/hydra
+	url = https://github.com/abo-abo/hydra.git
