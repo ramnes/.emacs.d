@@ -14,6 +14,7 @@ Optional, but recommended:
 * `aspell`
 * `flake8`
 * `shellcheck`
+* `xsel`
 
 Install
 -------
