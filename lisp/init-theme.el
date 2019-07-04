@@ -9,10 +9,10 @@
 (set-display-table-slot standard-display-table 'wrap ?\…)
 
 ;; Colors
-(defvar background "Grey24")
+(defvar background "Grey16")
 (defvar foreground "SkyBlue1")
-(defvar error "Grey26")
-(defvar warning "Grey26")
+(defvar error "Grey16")
+(defvar warning "Grey16")
 
 ;; Emacs base faces
 (set-face-background 'ediff-current-diff-A "DarkRed")
