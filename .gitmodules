@@ -148,3 +148,9 @@
 [submodule "site-lisp/hydra"]
 	path = site-lisp/hydra
 	url = https://github.com/abo-abo/hydra.git
+[submodule "site-lisp/emacs-terraform-mode"]
+	path = site-lisp/terraform-mode
+	url = https://github.com/syohex/emacs-terraform-mode.git
+[submodule "site-lisp/emacs-hcl-mode"]
+	path = site-lisp/hcl-mode
+	url = https://github.com/syohex/emacs-hcl-mode.git
