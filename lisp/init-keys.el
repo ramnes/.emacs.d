@@ -26,6 +26,11 @@
 (add-key "C-b" 'sort-words)
 (add-key "C-w" 'kill-region-or-backward-word)
 
+(add-key "C-d C-<up>" 'smerge-keep-upper)
+(add-key "C-d C-<down>" 'smerge-keep-lower)
+(add-key "C-d C-<left>" 'smerge-prev)
+(add-key "C-d C-<right>" 'smerge-next)
+
 (add-key "C-x C-b" 'ibuffer)
 (add-key "C-x C-k" 'kill-buffer-and-window)
 (add-key "C-x k" 'kill-buffer)
