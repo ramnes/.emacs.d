@@ -26,10 +26,12 @@
 (add-key "C-b" 'sort-words)
 (add-key "C-w" 'kill-region-or-backward-word)
 
-(add-key "C-d C-<up>" 'smerge-keep-upper)
-(add-key "C-d C-<down>" 'smerge-keep-lower)
-(add-key "C-d C-<left>" 'smerge-prev)
-(add-key "C-d C-<right>" 'smerge-next)
+(add-key "C-d <up>" 'smerge-keep-upper)
+(add-key "C-d <down>" 'smerge-keep-lower)
+(add-key "C-d <left>" 'smerge-prev)
+(add-key "C-d <right>" 'smerge-next)
+(add-key "C-d p" 'git-gutter:popup-hunk)
+(add-key "C-d r" 'git-gutter:revert-hunk)
 
 (add-key "C-x C-b" 'ibuffer)
 (add-key "C-x C-k" 'kill-buffer-and-window)
