@@ -12,6 +12,7 @@
 (defun add-key (keys func)
   (define-key keys-mode-map (kbd keys) func))
 
+(add-key "C-c C-a" 'mc/mark-all-like-this)
 (add-key "C-c C-v" 'mc/edit-lines)
 (add-key "C-c C-i" 'indent-region)
 (add-key "C-c C-j" 'last-shell-command)
