@@ -138,6 +138,11 @@
 ;; Always indent with spaces
 (setq-default indent-tabs-mode nil)
 
+;; Except for Makefiles
+(add-hook 'makefile-mode-hook
+   (lambda ()
+      (setq indent-tabs-mode t)))
+
 ;; Avoid annoying "Active processes exist" prompt when quitting Emacs
 (defadvice save-buffers-kill-emacs (around no-query-kill-emacs activate)
   (cl-letf (((symbol-function #'process-list) (lambda ()))) ad-do-it))
