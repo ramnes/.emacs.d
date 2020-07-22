@@ -92,8 +92,9 @@
 ;; Dockerfile-mode
 (add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
 
-;; CSS-mode for LESS
+;; CSS-mode for LESS and Rofi configuration files
 (add-to-list 'auto-mode-alist '("\\.less\\'" . css-mode))
+(add-to-list 'auto-mode-alist '("\\.rasi\\'" . css-mode))
 
 ;; sh-mode for ebuilds
 (add-to-list 'auto-mode-alist '("\\.ebuild\\'" . sh-mode))
