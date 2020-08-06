@@ -13,6 +13,7 @@
 (require 'dash)
 (require 'dockerfile-mode)
 (require 'ediff)
+(require 'editorconfig-core)
 (require 'editorconfig)
 (require 'flymake)
 (require 'flymake-go)
