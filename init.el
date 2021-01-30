@@ -3,6 +3,9 @@
 ;; <contact@ramnes.eu>
 ;;
 
+;; Do not collect garbage before 50MB to make startup faster
+(setq gc-cons-threshold 50000000)
+
 ;; Load path
 (let ((default-directory "~/.emacs.d/site-lisp/"))
   (normal-top-level-add-to-load-path '("."))
