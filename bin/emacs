@@ -1,0 +1,7 @@
+#!/bin/bash
+if [[ "$*" == *"--daemon"* || "$*" == *"--help"* || "$*" == *"--version"* ]]
+then
+    /usr/bin/emacs "$@"
+else
+    emacsclient --tty -c -nw -a= --socket-name=$(whoami) "$@"
+fi
