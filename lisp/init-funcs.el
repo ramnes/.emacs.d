@@ -43,6 +43,13 @@ Otherwise, call `backward-kill-word'."
           (rename-file filename new-name t)
           (set-visited-file-name new-name t t)))))))
 
+(defun kill-other-buffers ()
+  "Kill all other buffers."
+  (interactive)
+  (mapc 'kill-buffer
+        (delq (current-buffer)
+              (remove-if-not 'buffer-file-name (buffer-list)))))
+
 ;; Improve Emacs split*
 (defun windnew-left ()
   "Create a new window at the left the current window"
