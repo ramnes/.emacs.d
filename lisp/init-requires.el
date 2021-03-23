@@ -41,6 +41,7 @@
 (require 'pip-requirements)
 (require 'popup)
 (require 'popwin)
+(require 'python-black)
 (require 'rainbow-delimiters)
 (require 'rst)
 (require 'rust-mode)
