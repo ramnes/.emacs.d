@@ -106,7 +106,7 @@
 (add-hook 'sh-mode-hook 'flymake-shellcheck-load)
 
 ;; TypeScript
-(add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode))
+(add-to-list 'auto-mode-alist '("\\.ts[x]\\'" . typescript-mode))
 
 ;; YALM-mode
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
