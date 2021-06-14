@@ -108,9 +108,8 @@
 ;; TypeScript
 (add-to-list 'auto-mode-alist '("\\.ts[x]\\'" . typescript-mode))
 
-;; YALM-mode
-(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
-(add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
+;; YAML-mode
+(add-to-list 'auto-mode-alist '("\\.y[a]ml\\'" . yaml-mode))
 (add-hook 'yaml-mode-hook (lambda () (flyspell-mode -1)))
 (add-hook 'yaml-mode-hook (lambda () (auto-complete-mode -1)))
 
