@@ -37,6 +37,7 @@
 (require 'move-border)
 (require 'multiple-cursors)
 (require 'nginx-mode)
+(require 'nix-mode)
 ;; (require 'php-mode)
 (require 'pip-requirements)
 (require 'popup)

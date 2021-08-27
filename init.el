@@ -102,6 +102,9 @@
 ;; sh-mode for ebuilds
 (add-to-list 'auto-mode-alist '("\\.ebuild\\'" . sh-mode))
 
+;; Nix
+(add-to-list 'auto-mode-alist '("\\.nix\\'" . nix-mode))
+
 ;; flymake for sh-mode
 (add-hook 'sh-mode-hook 'flymake-shellcheck-load)
 
