@@ -192,3 +192,10 @@
 (set-face-foreground 'git-gutter:added "AquaMarine3")
 (set-face-foreground 'git-gutter:deleted "IndianRed3")
 (set-face-foreground 'git-gutter:separator background)
+
+;; diff
+(custom-set-faces
+ '(diff-added ((t (:inherit diff-changed :extend t :foreground "DarkGreen" :weight bold))))
+ '(diff-refine-added ((t (:inherit diff-refine-changed :background "DarkGreen" :foreground "BrightGreen"))))
+ '(diff-refine-removed ((t (:inherit diff-refine-changed :background "DarkRed" :foreground "BrightRed"))))
+ '(diff-removed ((t (:inherit diff-changed :extend t :foreground "DarkRed" :weight bold)))))
