@@ -53,6 +53,7 @@
 (add-key "M-C-i" 'windnew-ipython)
 (add-key "M-C-j" 'windnew-auto)
 (add-key "M-RET" 'windnew-auto)
+(add-key "M-SPC" 'transpose-frame)
 
 (add-key "M-C-w" 'xsel-copy)
 (add-key "M-C-y" 'xsel-paste)
