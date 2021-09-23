@@ -8,7 +8,6 @@
 (require 'async)
 (require 'auto-complete)
 (require 'auto-complete-config)
-(require 'autopair)
 (require 'column-enforce-mode)
 (require 'dash)
 (require 'dockerfile-mode)

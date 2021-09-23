@@ -34,9 +34,6 @@
 [submodule "site-lisp/python-environment"]
 	path = site-lisp/python-environment
 	url = https://github.com/tkf/emacs-python-environment
-[submodule "site-lisp/autopair"]
-	path = site-lisp/autopair
-	url = https://github.com/capitaomorte/autopair
 [submodule "site-lisp/move-border"]
 	path = site-lisp/move-border
 	url = https://github.com/ramnes/move-border

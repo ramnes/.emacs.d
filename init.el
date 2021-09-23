@@ -53,13 +53,8 @@
 (setq ac-use-fuzzy 1)
 (setq ac-use-quick-help 1)
 
-;; Auto close braces (with triple quote support for python)
-(add-hook 'python-mode-hook
-          #'(lambda ()
-              (setq autopair-handle-action-fns
-                    (list #'autopair-default-handle-action
-                          #'autopair-python-triple-quote-action))))
-(autopair-global-mode 1)
+;; Auto close braces
+(electric-pair-mode)
 
 ;; 80 char rule (for text and prog only)
 (setq-default fill-column 79)
@@ -152,12 +147,6 @@
 ;; Avoid annoying "Active processes exist" prompt when quitting Emacs
 (defadvice save-buffers-kill-emacs (around no-query-kill-emacs activate)
   (cl-letf (((symbol-function #'process-list) (lambda ()))) ad-do-it))
-
-;; Disable autopair when term-mode
-(add-hook 'term-mode-hook
-	  #'(lambda ()
-	      (setq autopair-dont-activate t)	;; for emacs < 24
-	      (autopair-mode -1)))		;; for emacs >= 24
 
 ;; Kernel coding style
 (setq c-default-style "linux"
