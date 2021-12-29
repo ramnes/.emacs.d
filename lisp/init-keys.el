@@ -67,6 +67,7 @@
 (add-key "M-s" 'helm-multi-swoop-all)
 (add-key "M-m" 'git-messenger:popup-message)
 (add-key "M-b" 'vc-annotate)
+(add-key "M-f" 'python-black-region)
 
 (define-minor-mode keys-mode
   "Overriding key bindings" t " Keys" 'keys-mode-map)
