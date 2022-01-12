@@ -56,6 +56,9 @@
 ;; Auto close braces
 (electric-pair-mode)
 
+;; Auto indent closing braces
+(electric-indent-mode)
+
 ;; 80 char rule (for text and prog only)
 (setq-default fill-column 79)
 (add-hook 'prog-mode-hook 'auto-fill-mode)
