@@ -236,7 +236,11 @@
 ;; Show modified lines from git
 (global-git-gutter-mode 1)
 (custom-set-variables
+ '(git-gutter:added-sign "┃")
  '(git-gutter:always-show-separator 1)
+ '(git-gutter:deleted-sign "┃")
+ '(git-gutter:modified-sign "┃")
+ '(git-gutter:unchanged-sign "┃")
  '(git-gutter:update-interval 1))
 
 ;; Make pip-requirements use AC
