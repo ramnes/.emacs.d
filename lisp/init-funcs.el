@@ -123,9 +123,9 @@ Otherwise, call `backward-kill-word'."
   (interactive)
   (if (region-active-p)
       (progn
-	(shell-command-on-region (region-beginning) (region-end) "xsel -i -b")
+	(shell-command-on-region (region-beginning) (region-end) "pbcopy")
 	(deactivate-mark))))
 
 (defun xsel-paste ()
   (interactive)
-  (insert (shell-command-to-string "xsel -o -b")))
+  (insert (shell-command-to-string "pbpaste")))
