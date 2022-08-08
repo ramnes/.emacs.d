@@ -26,6 +26,7 @@
 (load "init-theme")
 
 ;; Don't save backup files in the working directory
+(setq create-lockfiles nil)
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
