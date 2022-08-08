@@ -49,7 +49,6 @@
 (require 'smerge-mode)
 (require 'terraform-mode)
 (require 'transpose-frame)
-(require 'typescript)
 (require 'web-mode)
 (require 'wikitext-mode)
 (require 'yaml-mode)
