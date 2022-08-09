@@ -117,6 +117,19 @@
 (set-face-foreground 'flymake-error nil)
 (set-face-foreground 'flymake-warning nil)
 
+;; Company faces
+(set-face-background 'company-tooltip "Black")
+(set-face-background 'company-tooltip-annotation background)
+(set-face-background 'company-tooltip-selection background)
+(set-face-background 'company-tooltip-scrollbar-thumb "Black")
+(set-face-background 'company-tooltip-scrollbar-track background)
+(set-face-foreground 'company-tooltip "White")
+(set-face-foreground 'company-tooltip-annotation foreground)
+(set-face-foreground 'company-tooltip-common "LightSkyBlue1")
+(set-face-foreground 'company-tooltip-common-selection foreground)
+(set-face-foreground 'company-tooltip-selection foreground)
+(set-face-foreground 'company-preview-common foreground)
+
 ;; Highlight faces
 (set-face-foreground 'highlight nil)
 

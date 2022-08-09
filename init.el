@@ -37,8 +37,6 @@
 
 ;; Flymake
 (setq python-flymake-command '("pycheck" "-"))
-(eval-after-load 'flymake
-  (add-hook 'flymake-mode-hook #'flymake-diagnostic-at-point-mode))
 (add-hook 'prog-mode-hook 'flymake-mode)
 
 ;; Auto close braces
@@ -253,3 +251,17 @@
      (define-key function-key-map "\e[1;9B" [M-down])
      (define-key function-key-map "\e[1;9C" [M-right])
      (define-key function-key-map "\e[1;9D" [M-left])))
+
+;; company-mode
+(global-company-mode)
+(define-key company-mode-map (kbd "TAB") 'company-indent-or-complete-common)
+
+(setq
+ company-minimum-prefix-length 2
+ company-backends '(company-capf))
+
+;; lsp
+(setq lsp-headerline-breadcrumb-enable nil)
+(define-key lsp-mode-map (kbd "M-.") 'lsp-find-definition)
+(add-hook 'python-mode-hook #'lsp-deferred)
+(add-hook 'js-mode-hook #'lsp-deferred)
