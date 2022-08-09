@@ -41,19 +41,6 @@
   (add-hook 'flymake-mode-hook #'flymake-diagnostic-at-point-mode))
 (add-hook 'prog-mode-hook 'flymake-mode)
 
-;; Autocompletion
-(add-to-list 'ac-dictionary-directories
-             (expand-file-name "~/.emacs.d/auto-complete/dict"))
-(setq ac-comphist-file  "~/.emacs.d/auto-complete/ac-comphist.dat")
-(ac-config-default)
-(ac-linum-workaround)
-
-(setq ac-auto-start 1)
-(setq ac-ignore-case nil)
-(setq ac-set-trigger-key "TAB")
-(setq ac-use-fuzzy 1)
-(setq ac-use-quick-help 1)
-
 ;; Auto close braces
 (electric-pair-mode)
 
@@ -113,11 +100,6 @@
 ;; YAML-mode
 (add-to-list 'auto-mode-alist '("\\.y[a]ml\\'" . yaml-mode))
 (add-hook 'yaml-mode-hook (lambda () (flyspell-mode -1)))
-(add-hook 'yaml-mode-hook (lambda () (auto-complete-mode -1)))
-
-;; Jedi (Python completion)
-(setq jedi:complete-on-dot t)
-(add-hook 'python-mode-hook 'jedi:setup)
 
 ;; Auto revert files (useful when changing branch)
 (global-auto-revert-mode 1)
@@ -188,16 +170,7 @@
 ;; Save without asking when inserting a new word in ispell dictionary
 (setq ispell-silently-savep t)
 
-;; ac-ispell + flyspell
-(custom-set-variables
- '(ac-ispell-requires 4))
-
-(eval-after-load "auto-complete"
-  '(progn
-     (ac-ispell-setup)
-     (ac-flyspell-workaround)))
-
-(add-hook 'text-mode-hook 'ac-ispell-ac-setup)
+;; flyspell
 (add-hook 'text-mode-hook 'flyspell-mode)
 
 ;; Automatically save cursor position when leaving a file
@@ -242,9 +215,6 @@
  '(git-gutter:modified-sign "┃")
  '(git-gutter:unchanged-sign "┃")
  '(git-gutter:update-interval 1))
-
-;; Make pip-requirements use AC
-(add-hook 'pip-requirements-mode-hook #'pip-requirements-auto-complete-setup)
 
 ;; typit
 (defun typit ()

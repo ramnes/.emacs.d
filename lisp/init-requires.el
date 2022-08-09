@@ -3,11 +3,8 @@
 ;; <contact@ramnes.eu>
 ;;
 
-(require 'ac-ispell)
 (require 'android-mode)
 (require 'async)
-(require 'auto-complete)
-(require 'auto-complete-config)
 (require 'column-enforce-mode)
 (require 'dash)
 (require 'dockerfile-mode)
@@ -20,13 +17,11 @@
 (require 'flymake-shellcheck)
 (require 'git-gutter)
 (require 'git-messenger)
-(require 'go-autocomplete)
 (require 'go-mode-autoloads)
 (require 'hcl-mode)
 (require 'helm)
 (require 'helm-swoop)
 (require 'htmlize)
-(require 'jedi)
 (require 'jinja2-mode)
 (require 'json-reformat)
 (require 'lua-mode)

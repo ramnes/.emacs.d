@@ -117,12 +117,6 @@
 (set-face-foreground 'flymake-error nil)
 (set-face-foreground 'flymake-warning nil)
 
-;; Auto-complete faces
-(set-face-background 'ac-candidate-face "Black")
-(set-face-background 'ac-selection-face foreground)
-(set-face-foreground 'ac-candidate-face "White")
-(set-face-foreground 'ac-completion-face foreground)
-
 ;; Highlight faces
 (set-face-foreground 'highlight nil)
 
