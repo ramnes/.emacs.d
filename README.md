@@ -1,9 +1,8 @@
 .emacs.d
 ========
 
-My Emacs 26+ (-nw) configuration, mainly for Python and Go programming.
-
-I also try to maintain a `emacs25` branch for outdated distributions.
+My Emacs (-nw) configuration, mainly for Python programming. I happen to tinker
+with other languages too.
 
 Dependencies
 -----------
