@@ -9,6 +9,10 @@ Dependencies
 * `virtualenv`
 * `pip`
 
+Language servers (LSP yay):
+* `python-lsp-server`
+* `typescript-language-server` and `typescript`
+
 Optional, but recommended:
 * `aspell`
 * `flake8`
@@ -20,5 +24,4 @@ Install
 ```
 $ git clone git@github.com:ramnes/.emacs.d.git --recursive
 $ .emacs.d/bin/compile
-$ emacs --load ~/.emacs.d/init.el --batch -f "jedi:install-server"
 ```
