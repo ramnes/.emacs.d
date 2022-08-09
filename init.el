@@ -260,8 +260,7 @@
  company-minimum-prefix-length 2
  company-backends '(company-capf))
 
-;; lsp
-(setq lsp-headerline-breadcrumb-enable nil)
-(define-key lsp-mode-map (kbd "M-.") 'lsp-find-definition)
-(add-hook 'python-mode-hook #'lsp-deferred)
-(add-hook 'js-mode-hook #'lsp-deferred)
+;; eglot (LSP)
+(add-hook 'python-mode-hook 'eglot-ensure)
+(add-hook 'js-mode-hook 'eglot-ensure)
+(define-key eglot-mode-map (kbd "M-.") 'xref-find-definitions)

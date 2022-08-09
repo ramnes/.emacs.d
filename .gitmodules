@@ -151,12 +151,6 @@
 [submodule "site-lisp/company-mode"]
 	path = site-lisp/company-mode
 	url = https://github.com/company-mode/company-mode.git
-[submodule "site-lisp/lsp-mode"]
-	path = site-lisp/lsp-mode
-	url = https://github.com/emacs-lsp/lsp-mode.git
-[submodule "site-lisp/ht"]
-	path = site-lisp/ht
-	url = https://github.com/Wilfred/ht.el.git
-[submodule "site-lisp/spinner"]
-	path = site-lisp/spinner
-	url = https://github.com/Malabarba/spinner.el.git
+[submodule "site-lisp/eglot"]
+	path = site-lisp/eglot
+	url = https://github.com/joaotavora/eglot.git
