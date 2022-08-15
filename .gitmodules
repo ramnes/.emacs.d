@@ -154,6 +154,9 @@
 [submodule "site-lisp/python-black"]
 	path = site-lisp/python-black
 	url = https://github.com/wbolster/emacs-python-black.git
+[submodule "site-lisp/reformatter"]
+	path = site-lisp/reformatter
+	url = https://github.com/purcell/reformatter.el.git
 [submodule "site-lisp/nix-mode"]
 	path = site-lisp/nix-mode
 	url = https://github.com/NixOS/nix-mode.git
