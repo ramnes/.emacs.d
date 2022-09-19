@@ -154,3 +154,6 @@
 [submodule "site-lisp/eglot"]
 	path = site-lisp/eglot
 	url = https://github.com/joaotavora/eglot.git
+[submodule "site-lisp/compat"]
+	path = site-lisp/compat
+	url = https://github.com/phikal/compat.el.git
