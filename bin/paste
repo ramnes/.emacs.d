@@ -1,0 +1,5 @@
+#!/bin/bash
+case "$(uname -s)" in
+    Linux*) xsel -o -b;;
+    Darwin*) pbpaste;;
+esac

@@ -118,14 +118,13 @@ Otherwise, call `backward-kill-word'."
       (windnew-auto)
       (load-ipython (buffer-file-name)))))
 
-;; Use xsel for copy/paste, and avoid Emacs super-slow parsing
 (defun xsel-copy ()
   (interactive)
   (if (region-active-p)
       (progn
-	(shell-command-on-region (region-beginning) (region-end) "pbcopy")
+	(shell-command-on-region (region-beginning) (region-end) "copy")
 	(deactivate-mark))))
 
 (defun xsel-paste ()
   (interactive)
-  (insert (shell-command-to-string "pbpaste")))
+  (insert (shell-command-to-string "paste")))
