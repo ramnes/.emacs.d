@@ -75,6 +75,7 @@
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tsx?\\'" . web-mode))
 
 ;; Dockerfile-mode
 (add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
@@ -91,9 +92,6 @@
 
 ;; flymake for sh-mode
 (add-hook 'sh-mode-hook 'flymake-shellcheck-load)
-
-;; TypeScript
-(add-to-list 'auto-mode-alist '("\\.tsx?\\'" . js-mode))
 
 ;; YAML-mode
 (add-to-list 'auto-mode-alist '("\\.y[a]ml\\'" . yaml-mode))
@@ -262,6 +260,8 @@
 
 ;; eglot (LSP)
 (setq eglot-sync-connect 0)
+(add-to-list 'eglot-server-programs '(web-mode . ("typescript-language-server" "--stdio")))
 (add-hook 'python-mode-hook 'eglot-ensure)
 (add-hook 'js-mode-hook 'eglot-ensure)
+(add-hook 'web-mode-hook 'eglot-ensure)
 (define-key eglot-mode-map (kbd "M-.") 'xref-find-definitions)
