@@ -45,14 +45,6 @@
 ;; Auto indent closing braces
 (electric-indent-mode)
 
-;; 80 char rule (for text and prog only)
-(setq-default fill-column 79)
-(add-hook 'prog-mode-hook 'auto-fill-mode)
-
-(setq column-enforce-column 79)
-(add-hook 'text-mode-hook 'column-enforce-mode)
-(add-hook 'prog-mode-hook 'column-enforce-mode)
-
 ;; Treat Java 1.5 @-style annotations as comments.
 (add-hook 'java-mode-hook
 	  #'(lambda ()
