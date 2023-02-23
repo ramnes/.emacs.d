@@ -260,8 +260,12 @@
 
 ;; eglot (LSP)
 (setq eglot-sync-connect 0)
+(setq eglot-workspace-configuration '((pylsp (plugins (black (enabled . t))))))
 (add-to-list 'eglot-server-programs '(web-mode . ("typescript-language-server" "--stdio")))
+
 (add-hook 'python-mode-hook 'eglot-ensure)
 (add-hook 'js-mode-hook 'eglot-ensure)
 (add-hook 'web-mode-hook 'eglot-ensure)
+
 (define-key eglot-mode-map (kbd "M-.") 'xref-find-definitions)
+(define-key eglot-mode-map (kbd "M-f") 'eglot-format)

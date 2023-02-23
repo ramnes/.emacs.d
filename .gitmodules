@@ -139,9 +139,6 @@
 [submodule "site-lisp/emacs-hcl-mode"]
 	path = site-lisp/hcl-mode
 	url = https://github.com/syohex/emacs-hcl-mode.git
-[submodule "site-lisp/python-black"]
-	path = site-lisp/python-black
-	url = https://github.com/wbolster/emacs-python-black.git
 [submodule "site-lisp/reformatter"]
 	path = site-lisp/reformatter
 	url = https://github.com/purcell/reformatter.el.git
