@@ -260,4 +260,11 @@
 (add-hook 'web-mode-hook 'eglot-ensure)
 
 (define-key eglot-mode-map (kbd "M-.") 'xref-find-definitions)
-(define-key eglot-mode-map (kbd "M-f") 'eglot-format)
+
+(defun format-or-indent-region (orig &rest args)
+  (interactive)
+  (if (and (eglot-current-server) (region-active-p))
+      (eglot-format (region-beginning) (- (region-end) 1))
+    (apply orig args)))
+
+(advice-add 'indent-region :around #'format-or-indent-region)
