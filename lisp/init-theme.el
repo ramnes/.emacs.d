@@ -163,9 +163,14 @@
 (set-face-foreground 'mmm-default-submode-face "AquaMarine3")
 
 ;; helm
-(set-face-background 'helm-selection foreground)
+(set-face-background 'helm-candidate-number nil)
+(set-face-background 'helm-match nil)
+(set-face-background 'helm-selection background)
 (set-face-background 'helm-source-header background)
-(set-face-foreground 'helm-selection nil)
+(set-face-bold-p 'helm-candidate-number 1)
+(set-face-foreground 'helm-candidate-number foreground)
+(set-face-foreground 'helm-match "LightSkyBlue1")
+(set-face-foreground 'helm-selection foreground)
 (set-face-foreground 'helm-source-header foreground)
 
 ;; helm-swoop

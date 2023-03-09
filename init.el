@@ -214,6 +214,10 @@
   (setq typit-dict "french.txt")
   (typit-basic-test))
 
+;; helm
+(helm-mode 1)
+(setq history-delete-duplicates t)
+
 ;; If there is no symbol at the cursor, use the last used words instead.
 (setq helm-swoop-pattern "")
 (setq helm-swoop-pre-input-function

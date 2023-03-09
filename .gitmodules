@@ -160,3 +160,9 @@
 [submodule "site-lisp/project"]
 	path = site-lisp/project
 	url = https://github.com/emacs-straight/project.git
+[submodule "site-lisp/projectile"]
+	path = site-lisp/projectile
+	url = https://github.com/bbatsov/projectile.git
+[submodule "site-lisp/helm-projectile"]
+	path = site-lisp/helm-projectile
+	url = https://github.com/bbatsov/helm-projectile.git

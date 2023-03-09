@@ -64,6 +64,8 @@
 (add-key "M-S-<right>" 'move-border-right)
 (add-key "M-S-<up>" 'move-border-up)
 
+(add-key "M-x" 'helm-M-x)
+(add-key "M-f" 'helm-projectile-find-file)
 (add-key "M-s" 'helm-multi-swoop-all)
 (add-key "M-m" 'git-messenger:popup-message)
 (add-key "M-b" 'vc-annotate)
