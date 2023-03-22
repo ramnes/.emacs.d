@@ -61,6 +61,7 @@
 ;; Markdown-mode
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+(setq markdown-fontify-code-blocks-natively t)
 
 ;; Web-mode
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
