@@ -154,3 +154,9 @@
 [submodule "site-lisp/compat"]
 	path = site-lisp/compat
 	url = https://github.com/phikal/compat.el.git
+[submodule "site-lisp/external-completion"]
+	path = site-lisp/external-completion
+	url = https://github.com/emacs-straight/external-completion.git
+[submodule "site-lisp/project"]
+	path = site-lisp/project
+	url = https://github.com/emacs-straight/project.git
