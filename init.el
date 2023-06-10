@@ -19,6 +19,9 @@
     (update-file-autoloads "~/.emacs.d/site-lisp/go-mode/go-mode.el" t
                            "~/.emacs.d/site-lisp/go-mode/go-mode-autoloads.el"))
 
+;; https://github.com/joaotavora/eglot/issues/549
+(load-file "~/.emacs.d/site-lisp/project/project.el")
+
 ;; Load lisp
 (load "init-requires")
 (load "init-funcs")
