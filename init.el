@@ -277,3 +277,14 @@
     (apply orig args)))
 
 (advice-add 'indent-region :around #'format-or-indent-region)
+
+;; fix diff
+(custom-set-faces
+ '(diff-added ((t (:inherit diff-changed :extend t :foreground "DarkGreen" :weight bold))))
+ '(diff-refine-added ((t (:inherit diff-refine-changed :background "DarkGreen" :foreground "BrightGreen"))))
+ '(diff-refine-removed ((t (:inherit diff-refine-changed :background "DarkRed" :foreground "BrightRed"))))
+ '(diff-removed ((t (:inherit diff-changed :extend t :foreground "DarkRed" :weight bold))))
+ '(font-lock-comment-face ((t (:foreground "slategray"))))
+ '(magit-section-highlight ((t (:extend t :background "grey16"))))
+ '(smerge-refined-added ((t (:inherit smerge-refined-change :background "darkgreen"))))
+ '(smerge-refined-removed ((t (:inherit smerge-refined-change :background "darkred")))))
