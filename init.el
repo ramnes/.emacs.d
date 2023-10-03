@@ -118,6 +118,9 @@
 ;; Always indent with spaces
 (setq-default indent-tabs-mode nil)
 
+;; Don't over-indent multiline Python function arguments
+(setq python-indent-def-block-scale 1)
+
 ;; Except for Makefiles
 (add-hook 'makefile-mode-hook
    (lambda ()
