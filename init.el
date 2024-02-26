@@ -280,6 +280,9 @@
 
 (advice-add 'indent-region :around #'format-or-indent-region)
 
+;; https://www.reddit.com/r/emacs/comments/10fq15i/comment/j4zbowm/
+(setq eglot-events-buffer-size 0)
+
 ;; fix diff
 (custom-set-faces
  '(diff-added ((t (:inherit diff-changed :extend t :foreground "DarkGreen" :weight bold))))
