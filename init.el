@@ -22,6 +22,9 @@
 ;; https://github.com/joaotavora/eglot/issues/549
 (load-file "~/.emacs.d/site-lisp/project/project.el")
 
+;; https://github.com/jorgenschaefer/elpy/issues/1901
+(setq flymake-allowed-file-name-masks '())
+
 ;; Load lisp
 (load "init-requires")
 (load "init-funcs")
