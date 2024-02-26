@@ -47,9 +47,8 @@
 
 ;; Auto close braces
 (electric-pair-mode)
-
-;; Auto indent closing braces
 (electric-indent-mode)
+(setq electric-pair-open-newline-between-pairs t)
 
 ;; Treat Java 1.5 @-style annotations as comments.
 (add-hook 'java-mode-hook
@@ -114,9 +113,6 @@
 
 ;; Rainbow delimiters
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
-
-;; Disable electric-indent-mode (by default in 24.4)
-(electric-indent-mode 0)
 
 ;; Always indent with spaces
 (setq-default indent-tabs-mode nil)
