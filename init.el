@@ -14,11 +14,6 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/magit/lisp")
 (setq exec-path (append exec-path '("~/.emacs.d/bin")))
 
-;; Create go-mode-autoloads if it doesn't exist yet
-(if (not (file-exists-p "~/.emacs.d/site-lisp/go-mode/go-mode-autoloads.el"))
-    (update-file-autoloads "~/.emacs.d/site-lisp/go-mode/go-mode.el" t
-                           "~/.emacs.d/site-lisp/go-mode/go-mode-autoloads.el"))
-
 ;; https://github.com/joaotavora/eglot/issues/549
 (load-file "~/.emacs.d/site-lisp/project/project.el")
 

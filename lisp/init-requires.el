@@ -19,7 +19,7 @@
 (require 'flymake-shellcheck)
 (require 'git-gutter)
 (require 'git-messenger)
-(require 'go-mode-autoloads)
+(require 'go-mode)
 (require 'hcl-mode)
 (require 'helm)
 (require 'helm-command)
