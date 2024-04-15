@@ -70,9 +70,6 @@
 [submodule "site-lisp/json-reformat"]
 	path = site-lisp/json-reformat
 	url = https://github.com/gongo/json-reformat
-[submodule "site-lisp/git-messenger"]
-	path = site-lisp/git-messenger
-	url = https://github.com/syohex/emacs-git-messenger
 [submodule "site-lisp/popwin"]
 	path = site-lisp/popwin
 	url = https://github.com/m2ym/popwin-el
@@ -166,3 +163,6 @@
 [submodule "site-lisp/helm-projectile"]
 	path = site-lisp/helm-projectile
 	url = https://github.com/bbatsov/helm-projectile.git
+[submodule "site-lisp/git-messenger"]
+	path = site-lisp/git-messenger
+	url = https://github.com/cnsunyour/git-messenger.git
