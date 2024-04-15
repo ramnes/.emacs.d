@@ -36,6 +36,8 @@
 (add-key "C-d p" 'git-gutter:popup-hunk)
 (add-key "C-d r" 'git-gutter:revert-hunk)
 
+(add-key "C-x <left>" 'projectile-previous-project-buffer)
+(add-key "C-x <right>" 'projectile-next-project-buffer)
 (add-key "C-x C-b" 'ibuffer)
 (add-key "C-x C-k" 'kill-buffer-and-window)
 (add-key "C-x k" 'kill-buffer)
