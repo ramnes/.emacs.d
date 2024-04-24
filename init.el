@@ -217,6 +217,9 @@
 (helm-mode 1)
 (setq history-delete-duplicates t)
 
+;; projectile
+(setq projectile-use-git-grep t)
+
 ;; If there is no symbol at the cursor, use the last used words instead.
 (setq helm-swoop-pattern "")
 (setq helm-swoop-pre-input-function

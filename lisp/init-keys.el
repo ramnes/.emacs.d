@@ -70,7 +70,7 @@
 
 (add-key "M-x" 'helm-M-x)
 (add-key "M-f" 'helm-projectile-find-file)
-(add-key "M-s" 'helm-multi-swoop-all)
+(add-key "M-s" 'helm-projectile-grep)
 (add-key "M-m" 'git-messenger:popup-message)
 (add-key "M-b" 'vc-annotate)
 
