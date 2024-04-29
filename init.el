@@ -30,6 +30,9 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
+;; Scroll faster and avoid other frames to freeze
+(setq fast-but-imprecise-scrolling t)
+
 ;; Make isearch use current region if active
 (add-hook 'isearch-mode-hook #'isearch-with-region)
 
