@@ -166,3 +166,6 @@
 [submodule "site-lisp/git-messenger"]
 	path = site-lisp/git-messenger
 	url = https://github.com/cnsunyour/git-messenger.git
+[submodule "site-lisp/copilot"]
+	path = site-lisp/copilot
+	url = https://github.com/copilot-emacs/copilot.el.git

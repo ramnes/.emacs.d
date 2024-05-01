@@ -62,6 +62,31 @@ Otherwise, call `backward-kill-word'."
         (delq (current-buffer)
               (remove-if-not 'buffer-file-name (buffer-list)))))
 
+;; copilot + company-mode
+(defun complete-or-indent ()
+  (interactive)
+  (or (copilot-accept-completion)
+      (company-indent-or-complete-common nil)))
+
+(defun copilot-cycle-to-next-or-first-completion ()
+  "Cycle to next completion, or to the first one if there is no more available."
+  (interactive)
+  (when (copilot--overlay-visible)
+    (copilot--get-completions-cycling
+     (lambda (result)
+       (unless copilot--completion-cache
+         (setq copilot--completion-cache result))
+       (let ((completions (plist-get result :completions)))
+         (if (seq-empty-p completions)
+             (message "No completion is available.")
+           (let ((idx (mod (+ copilot--completion-idx 1)
+                           (length completions))))
+             (when (= idx 0)
+               (message "Back to first completion."))
+             (setq copilot--completion-idx idx)
+             (let ((completion (elt completions idx)))
+               (copilot--show-completion completion)))))))))
+
 ;; Improve Emacs split*
 (defun windnew-left ()
   "Create a new window at the left the current window"

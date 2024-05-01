@@ -253,11 +253,20 @@
 
 ;; company-mode
 (global-company-mode)
-(define-key company-mode-map (kbd "TAB") 'company-indent-or-complete-common)
+(define-key company-mode-map (kbd "TAB") 'complete-or-indent)
 
 (setq
  company-minimum-prefix-length 2
  company-backends '(company-capf))
+
+;; copilot
+(add-hook 'prog-mode-hook 'copilot-mode)
+(setq
+ copilot-indent-offset-warning-disable t
+ copilot-idle-delay 1)
+
+(define-key copilot-mode-map (kbd "TAB") 'complete-or-indent)
+(define-key copilot-mode-map (kbd "<backtab>") 'copilot-cycle-to-next-or-first-completion)
 
 ;; eglot (LSP)
 (setq eglot-sync-connect 0)

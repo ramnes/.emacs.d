@@ -7,6 +7,7 @@
 (require 'async)
 (require 'column-enforce-mode)
 (require 'company)
+(require 'copilot)
 (require 'dash)
 (require 'dockerfile-mode)
 (require 'ediff)
