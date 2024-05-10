@@ -92,6 +92,7 @@
 (set-face-foreground 'font-lock-variable-name-face nil)
 (set-face-foreground 'isearch nil)
 (set-face-foreground 'isearch-fail nil)
+(set-face-foreground 'link foreground)
 (set-face-foreground 'magit-diff-added "BrightGreen")
 (set-face-foreground 'magit-diff-added-highlight "BrightGreen")
 (set-face-foreground 'magit-diff-context nil)
