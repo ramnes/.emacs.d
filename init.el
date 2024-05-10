@@ -216,6 +216,7 @@
 ;; helm
 (helm-mode 1)
 (setq history-delete-duplicates t)
+(setq helm-grep-file-path-style 'relative)
 
 ;; projectile
 (setq projectile-use-git-grep t)

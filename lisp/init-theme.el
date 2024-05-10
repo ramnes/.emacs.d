@@ -165,12 +165,18 @@
 (set-face-foreground 'mmm-default-submode-face "AquaMarine3")
 
 ;; helm
+(set-face-attribute 'helm-grep-file nil :inherit nil :underline nil)
 (set-face-background 'helm-candidate-number nil)
 (set-face-background 'helm-match nil)
 (set-face-background 'helm-selection background)
 (set-face-background 'helm-source-header background)
 (set-face-bold-p 'helm-candidate-number 1)
+(set-face-bold-p 'helm-grep-file 1)
+(set-face-bold-p 'helm-grep-lineno 1)
 (set-face-foreground 'helm-candidate-number foreground)
+(set-face-foreground 'helm-grep-file "Grey")
+(set-face-foreground 'helm-grep-lineno "Grey")
+(set-face-foreground 'helm-grep-match foreground-light)
 (set-face-foreground 'helm-match foreground-light)
 (set-face-foreground 'helm-selection foreground)
 (set-face-foreground 'helm-source-header foreground)
