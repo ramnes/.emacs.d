@@ -169,3 +169,6 @@
 [submodule "site-lisp/copilot"]
 	path = site-lisp/copilot
 	url = https://github.com/copilot-emacs/copilot.el.git
+[submodule "site-lisp/prescient"]
+	path = site-lisp/prescient
+	url = https://github.com/radian-software/prescient.el.git

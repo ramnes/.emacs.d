@@ -260,6 +260,10 @@
  company-minimum-prefix-length 2
  company-backends '(company-capf))
 
+;; prescient
+(prescient-persist-mode)
+(add-hook 'company-mode-hook 'company-prescient-mode)
+
 ;; copilot
 (add-hook 'prog-mode-hook 'copilot-mode)
 (setq
