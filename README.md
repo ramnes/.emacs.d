@@ -1,8 +1,8 @@
 .emacs.d
 ========
 
-My Emacs (-nw) configuration, mainly for Python programming. I happen to tinker
-with other languages too.
+My Emacs (-nw) configuration, mainly for Python, TS and Go
+programming. I happen to tinker with other languages too.
 
 Dependencies
 -----------
@@ -11,7 +11,8 @@ Dependencies
 
 Language servers (LSP yay):
 * `python-lsp-server`
-* `typescript-language-server` and `typescript`
+* `typescript-language-server` + `typescript` (`tsserver`)
+* `gopls`
 
 Optional, but recommended:
 * `aspell`
