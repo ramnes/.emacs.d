@@ -45,6 +45,7 @@
 (require 'popwin)
 (require 'projectile)
 (require 'prescient)
+(require 'protobuf-mode)
 (require 'rainbow-delimiters)
 (require 'rst)
 (require 'rust-mode)
