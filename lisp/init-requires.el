@@ -11,6 +11,7 @@
 (require 'copilot)
 (require 'dash)
 (require 'dockerfile-mode)
+(require 'dtrt-indent)
 (require 'ediff)
 (require 'editorconfig-core)
 (require 'editorconfig)

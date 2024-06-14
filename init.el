@@ -40,6 +40,10 @@
 (setq python-flymake-command '("pycheck" "-"))
 (add-hook 'prog-mode-hook 'flymake-mode)
 
+;; Guess indent
+(setq dtrt-indent-max-merge-deviation 0.0)
+(dtrt-indent-global-mode)
+
 ;; Auto close braces
 (electric-pair-mode)
 (electric-indent-mode)

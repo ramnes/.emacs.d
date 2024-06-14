@@ -172,3 +172,6 @@
 [submodule "site-lisp/prescient"]
 	path = site-lisp/prescient
 	url = https://github.com/radian-software/prescient.el.git
+[submodule "site-lisp/dtrt-indent"]
+	path = site-lisp/dtrt-indent
+	url = https://github.com/jscheid/dtrt-indent.git
