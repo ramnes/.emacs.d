@@ -299,6 +299,20 @@
 
 (advice-add 'indent-region :around #'format-or-indent-region)
 
+(defun adjust-tab-width ()
+  "`tab-width' is used by eglot for LSP formatting; adjust it with dtrt."
+  (let ((indent-offset-variables
+         (nth 2 (dtrt-indent--search-hook-mapping major-mode))))
+    (let ((indent-offset-variable
+           (if (listp indent-offset-variables)
+               (nth 0 indent-offset-variables)
+             indent-offset-variables)))
+      (if (boundp indent-offset-variable)
+          (setq tab-width (symbol-value indent-offset-variable))))))
+
+(advice-add 'dtrt-indent-try-set-offset :after #'adjust-tab-width)
+(advice-add 'dtrt-indent-set :after #'adjust-tab-width)
+
 ;; https://www.reddit.com/r/emacs/comments/10fq15i/comment/j4zbowm/
 (setq eglot-events-buffer-size 0)
 
