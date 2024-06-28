@@ -73,6 +73,7 @@
 (add-key "M-s" 'helm-projectile-grep)
 (add-key "M-m" 'git-messenger:popup-message)
 (add-key "M-b" 'vc-annotate)
+(add-key "M-r" 'eglot-rename)
 
 (define-minor-mode keys-mode
   "Overriding key bindings" t " Keys" 'keys-mode-map)
