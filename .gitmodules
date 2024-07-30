@@ -175,3 +175,6 @@
 [submodule "site-lisp/dtrt-indent"]
 	path = site-lisp/dtrt-indent
 	url = https://github.com/jscheid/dtrt-indent.git
+[submodule "site-lisp/helm-xref"]
+	path = site-lisp/helm-xref
+	url = https://github.com/brotzeit/helm-xref.git

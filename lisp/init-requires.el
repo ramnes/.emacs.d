@@ -29,6 +29,7 @@
 (require 'helm-mode)
 (require 'helm-projectile)
 (require 'helm-swoop)
+(require 'helm-xref)
 (require 'htmlize)
 (require 'jinja2-mode)
 (require 'json-reformat)
