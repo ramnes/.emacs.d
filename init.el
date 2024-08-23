@@ -291,6 +291,7 @@
 (add-hook 'python-mode-hook 'eglot-ensure)
 (add-hook 'js-mode-hook 'eglot-ensure)
 (add-hook 'web-mode-hook 'eglot-ensure)
+(add-hook 'go-mode 'eglot-ensure)
 (add-hook 'terraform-mode 'eglot-ensure)
 
 (define-key eglot-mode-map (kbd "M-.") 'xref-find-definitions)
