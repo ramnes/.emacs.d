@@ -78,6 +78,9 @@
 ;; Protobuf
 (add-to-list 'auto-mode-alist '("\\.proto\\'" . protobuf-mode))
 
+;; Terraform
+(add-to-list 'auto-mode-alist '("\\.tf\\'" . terraform-mode))
+
 ;; Dockerfile-mode
 (add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
 
@@ -288,6 +291,7 @@
 (add-hook 'python-mode-hook 'eglot-ensure)
 (add-hook 'js-mode-hook 'eglot-ensure)
 (add-hook 'web-mode-hook 'eglot-ensure)
+(add-hook 'terraform-mode 'eglot-ensure)
 
 (define-key eglot-mode-map (kbd "M-.") 'xref-find-definitions)
 

@@ -13,6 +13,7 @@ Language servers (LSP yay):
 * `python-lsp-server`
 * `typescript-language-server` + `typescript` (`tsserver`)
 * `gopls`
+* `terraform-ls`
 
 Optional, but recommended:
 * `aspell`
