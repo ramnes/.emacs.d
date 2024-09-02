@@ -277,6 +277,7 @@
 
 ;; copilot
 (add-hook 'prog-mode-hook 'copilot-mode)
+(add-hook 'text-mode-hook 'copilot-mode)
 (setq
  copilot-indent-offset-warning-disable t
  copilot-idle-delay 1)
