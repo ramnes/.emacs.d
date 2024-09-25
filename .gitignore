@@ -13,3 +13,5 @@ projects
 .cache/
 var/
 projectile-bookmarks.eld
+.emacs.desktop
+.emacs.desktop.lock

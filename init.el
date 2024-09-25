@@ -23,6 +23,9 @@
 (load "init-keys")
 (load "init-theme")
 
+;; Automatically restore buffers
+(desktop-save-mode 1)
+
 ;; Don't save backup files in the working directory
 (setq create-lockfiles nil)
 (setq backup-directory-alist
