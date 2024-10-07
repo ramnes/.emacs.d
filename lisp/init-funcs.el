@@ -165,3 +165,20 @@ Otherwise, call `backward-kill-word'."
 (defun xsel-paste ()
   (interactive)
   (insert (shell-command-to-string "paste")))
+
+;; helm-xref
+(defun helm-xref-format-candidate-git-or-relative (file line summary)
+  "Same as `helm-xref-format-candidate-short', but display git path if possible, relative path otherwise."
+  (let ((relative-file-name
+         (if (projectile-project-p)
+             (file-relative-name file (projectile-project-root))
+           (file-relative-name file (file-name-directory (buffer-file-name))))))
+    (concat
+     (propertize relative-file-name 'font-lock-face 'helm-xref-file-name)
+     (when (string= "integer" (type-of line))
+       (concat
+        ":"
+        (propertize (int-to-string line)
+                    'font-lock-face 'helm-xref-line-number)))
+     ":"
+     summary)))

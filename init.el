@@ -231,6 +231,7 @@
 (helm-mode 1)
 (setq history-delete-duplicates t)
 (setq helm-grep-file-path-style 'relative)
+(setq helm-xref-candidate-formatting-function 'helm-xref-format-candidate-git-or-relative)
 
 ;; projectile
 (setq projectile-use-git-grep t)
