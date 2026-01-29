@@ -254,6 +254,7 @@
   '(progn
      (define-key go-mode-map (kbd "C-c .") 'godef-jump)
      (setq gofmt-command "goimports")
+     (setq gofmt-show-errors nil)
      (add-hook 'before-save-hook #'gofmt-before-save)))
 
 
