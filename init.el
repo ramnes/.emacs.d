@@ -45,6 +45,7 @@
 
 ;; Guess indent
 (setq dtrt-indent-max-merge-deviation 0.0)
+(add-to-list 'dtrt-indent-hook-mapping-list '(pkl-mode c/c++/java tab-width))
 (dtrt-indent-global-mode)
 
 ;; Auto close braces
@@ -97,6 +98,9 @@
 
 ;; Nix
 (add-to-list 'auto-mode-alist '("\\.nix\\'" . nix-mode))
+
+;; Pkl
+(add-to-list 'auto-mode-alist '("\\.pkl\\'" . pkl-mode))
 
 ;; flymake for sh-mode
 (add-hook 'sh-mode-hook 'flymake-shellcheck-load)

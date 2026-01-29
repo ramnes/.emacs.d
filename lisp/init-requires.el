@@ -43,6 +43,7 @@
 ;; (require 'nix-mode)
 ;; (require 'php-mode)
 (require 'pip-requirements)
+(require 'pkl-mode)
 (require 'popup)
 (require 'popwin)
 (require 'projectile)
