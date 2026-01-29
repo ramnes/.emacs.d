@@ -44,7 +44,7 @@
 (add-hook 'prog-mode-hook 'flymake-mode)
 
 ;; Guess indent
-(setq dtrt-indent-max-merge-deviation 0.0)
+(setq dtrt-indent-max-merge-deviation 1.0)
 (add-to-list 'dtrt-indent-hook-mapping-list '(pkl-mode c/c++/java tab-width))
 (dtrt-indent-global-mode)
 
