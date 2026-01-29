@@ -314,7 +314,7 @@
 
 (advice-add 'indent-region :around #'format-or-indent-region)
 
-(defun adjust-tab-width ()
+(defun adjust-tab-width (&rest _)
   "`tab-width' is used by eglot for LSP formatting; adjust it with dtrt."
   (let ((indent-offset-variables
          (nth 2 (dtrt-indent--search-hook-mapping major-mode))))
