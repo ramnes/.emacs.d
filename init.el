@@ -288,7 +288,7 @@
 (add-hook 'text-mode-hook 'copilot-mode)
 (setq
  copilot-indent-offset-warning-disable t
- copilot-idle-delay 1)
+ copilot-idle-delay 0.5)
 
 (define-key copilot-mode-map (kbd "TAB") 'complete-or-indent)
 (define-key copilot-mode-map (kbd "<backtab>") 'copilot-cycle-to-next-or-first-completion)
