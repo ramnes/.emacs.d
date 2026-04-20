@@ -186,9 +186,9 @@
 
 ;; Use flyspell for git-commit-mode
 (add-hook 'git-commit-mode-hook 'turn-on-flyspell)
-(add-hook 'git-commit-mode-hook 'turn-on-auto-fill)
 (add-hook 'git-commit-mode-hook (lambda () (toggle-save-place 0)))
 (add-hook 'git-commit-mode-hook 'magit-diff-while-committing)
+(remove-hook 'git-commit-setup-hook 'git-commit-turn-on-auto-fill)
 
 ;; git-messenger
 (setq git-messenger:show-detail t)
