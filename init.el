@@ -1,4 +1,4 @@
-;;
+;; -*- lexical-binding: t -*-
 ;; init.el in ramnes/.emacs.d
 ;; <contact@ramnes.eu>
 ;;
